@@ -1,3 +1,5 @@
+<img width="320" height="146" alt="PROJECT-NOONE" src="https://github.com/user-attachments/assets/fabea2d6-4d0e-4b4d-8851-f06867e5d176" />
+
 # PROJECT NOONE
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
