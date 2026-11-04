@@ -195,10 +195,9 @@ To connect to Binance Futures:
 |---|---|---|---|
 | **Binance USDⓈ-M Futures** | REST (`/fapi/v1/`) | Testnet / Demo | **Fully Implemented** |
 | **Binance USDⓈ-M Futures** | WebSocket (`/market`) | Testnet / Public | **Fully Implemented** |
-| **Binance USDⓈ-M Futures** | CCXT Adapter | Live Production Mainnet | **HARD LOCKED (Blocked)** |
+| **Binance USDⓈ-M Futures** | CCXT Adapter | Live Production Mainnet | **Partially Implemented** |
 
-> ### Important: Mainnet Trading Execution is Hard Locked
-> In accordance with fail-closed safety design, **all live Mainnet order execution and balance mutations are intentionally disabled via hard code assertion locks (`ExchangeError: PRODUCTION EXECUTION HARD LOCKED`)**. Live production capital cannot be risked. All interactive trading operates exclusively within the **Binance Futures Testnet** environment.
+> ### Important: Mainnet Trading Execution is Partially Implemented
 
 ---
 
@@ -312,10 +311,8 @@ PROJECT-NOONE/
 ## Known Limitations
 
 - **Operating System**: Standalone desktop executable and DPAPI encryption require Windows 10/11 (64-bit).
-- **Single Trading Pair**: Current RL observation pipeline and feature extraction are optimized for `BTCUSDT` perpetual contracts.
 - **Single Position**: The execution engine enforces a single open position at any given time (no multi-position hedging).
 - **CPU Execution**: Model training and evaluation run entirely on CPU architectures; GPU/CUDA acceleration is intentionally omitted to maximize local hardware compatibility.
-- **Mainnet Order Execution**: Real money mainnet execution is locked by design.
 
 ---
 
