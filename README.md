@@ -43,6 +43,63 @@ PROJECT NOONE delivers a local, autonomous trading station for perpetual futures
 - Fail-closed execution gate with idempotent 9-step order recovery.
 - Native Windows desktop application with interactive TradingView charting and real-time telemetry.
 
+
+# 1. Impact (30%)
+
+PROJECT NOONE aims to make autonomous cryptocurrency futures trading more accessible, particularly for beginner traders and individuals who cannot afford expensive cloud-based AI services or powerful GPU hardware.
+
+Many AI-powered trading approaches rely on cloud LLMs, paid API access, or computationally demanding local LLMs. This creates financial and hardware barriers for individuals who want to experiment with autonomous trading.
+
+PROJECT NOONE takes a different approach. Instead of depending on LLMs for trading decisions, it uses a Deep Q-Network (DQN) based Reinforcement Learning engine that processes market data and financial news to make trading decisions. It runs on CPU hardware without requiring GPU acceleration or paid LLM APIs.
+
+Users can select up to five cryptocurrency perpetual futures trading pairs and configure individual risk parameters, including maximum allocated capital, take-profit, stop-loss, daily PnL limits, maximum position size, maximum slippage, leverage, and automatic execution controls.
+
+Our potential beneficiaries include beginner traders, independent traders, and developers interested in experimenting with autonomous trading without investing in expensive computing infrastructure.
+
+Our vision is simple: autonomous trading should not be limited to people who can afford expensive AI infrastructure.
+
+**PROJECT NOONE — FOR EVERYONE.**
+
+# 2. Use of Meta AI Tooling (25%)
+
+We used Meta Muse Code during the initial development of PROJECT NOONE as an AI-powered coding assistant.
+
+Rather than using it for a basic code-generation task, we approached development through structured prompts and component-level technical specifications.
+
+Muse Code helped us establish the initial project components, build the DQN + Reinforcement Learning pipeline, and develop the starting UI/UX.
+
+Our workflow involved breaking down the larger project architecture into individual components, providing implementation instructions, and using Muse Code to accelerate the initial engineering work.
+
+As development progressed, we reached Muse Code's available usage limitations and continued implementation using another coding agent. This allowed us to carry forward the foundations established with Meta's tooling while completing integration, debugging, and testing.
+
+An important distinction is that Meta Muse Code contributed to building the application; it is not a runtime dependency. PROJECT NOONE's trading decisions are made by its own DQN + RL engine, without requiring an LLM.
+
+# 3. Technical Depth & Execution (20%)
+
+PROJECT NOONE combines machine learning, market-data processing, autonomous trading infrastructure, account connectivity, and a desktop application into one system.
+
+Its core technical component is a DQN-based Reinforcement Learning engine designed to make trading decisions without depending on LLM inference. The engine processes market information and financial news obtained through public APIs and uses its learned policy to determine trading actions.
+
+The application includes:
+
+* **DQN + RL Engine:** Autonomous trading decision-making without requiring LLMs.
+* **Market Data Integration:** Retrieves cryptocurrency market information through public APIs.
+* **News Data Integration:** Processes financial news as an additional information source.
+* **Multi-Token Management:** Allows users to select and manage up to five trading pairs.
+* **Configurable Risk Controls:** Supports capital allocation, TP, SL, daily PnL limits, maximum position size, maximum slippage, and leverage.
+* **Exchange Connectivity:** Connects exchange accounts using API credentials protected through Windows CryptProtectData.
+* **Trading Dashboard:** Displays account information, market details, performance information, and engine status.
+* **Chart Integration:** Provides interactive TradingView charts.
+* **Testnet Environment:** Supports testing trading functionality without using real funds.
+* **Desktop Architecture:** Combines a React and TypeScript frontend with a Python backend.
+
+We focused on building an integrated application rather than presenting isolated machine-learning components. The result is a working desktop trading system with market monitoring, configurable risk management, account connectivity, and autonomous decision-making capabilities.
+
+The system is designed to operate on ordinary CPU hardware, reducing its dependence on expensive GPU infrastructure and paid LLM services.
+
+PROJECT NOONE is an experimental trading system, not a guarantee of profitability. Cryptocurrency perpetual futures carry substantial financial risk.
+
+
 ---
 
 ## Implemented Features
