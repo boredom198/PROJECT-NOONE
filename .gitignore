@@ -1,0 +1,57 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+*.pyd
+
+# Virtual Environments
+.venv/
+venv/
+ENV/
+env/
+
+# Build and Distribution intermediates
+build/
+dist/
+*.egg-info/
+
+# Frontend dependencies and logs
+node_modules/
+frontend/node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Testing & Test Artifacts
+.pytest_cache/
+pytest-of-*/
+.coverage
+htmlcov/
+
+# Machine and IDE configurations
+.vscode/
+frontend/.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.user
+Thumbs.db
+Desktop.ini
+
+# Secrets, Credentials, Local Trading Records and Databases
+*.env
+*.env.*
+credentials_*.enc
+execution_journal_*.db
+ui_state.json
+*.sqlite3
+*.db
+*.log
+
+# Archives
+*.zip
+# Whitelist Windows Release ZIP and bundled model weights
+!PROJECT-NOONE-Windows-x64.zip
+!runs/stage2-realdata/final_model.zip
+
+PROJECT-NOONE-Windows-x64.zip

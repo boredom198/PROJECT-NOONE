@@ -1,0 +1,101 @@
+{
+  "created_at": "2026-11-03T20:02:24.509697+00:00",
+  "disclaimer": "Historical backtest/training results do not guarantee future performance. This is a research pipeline, not a profitability guarantee.",
+  "config": {
+    "dqn": {
+      "policy": "MlpPolicy",
+      "net_arch": [
+        128,
+        128
+      ],
+      "buffer_size": 100000,
+      "batch_size": 64,
+      "learning_rate": 0.0003,
+      "gamma": 0.99,
+      "train_freq": 4,
+      "target_update_interval": 1000,
+      "exploration_initial_eps": 1.0,
+      "exploration_final_eps": 0.05,
+      "exploration_fraction": 0.25,
+      "learning_starts": 500,
+      "total_timesteps": 1100,
+      "seed": 42,
+      "device": "cpu",
+      "checkpoint_freq": 2000,
+      "verbose": 0,
+      "invalid_action_penalty": 0.001
+    },
+    "data": {
+      "symbol": "BTCUSDT",
+      "interval": "15m",
+      "total_limit": 5000,
+      "train_fraction": 0.8,
+      "warmup_candles": 50,
+      "min_train_candles": 100,
+      "min_eval_candles": 50,
+      "episode_window": null,
+      "news_max_age_hours": 24.0,
+      "news_dropout_probability": 0.1,
+      "news_asset": null
+    },
+    "output_dir": "runs",
+    "run_name": null
+  },
+  "observation_dim": 26,
+  "action_count": 5,
+  "feature_schema_hash": "b08a684a49e8917b9533bae811224b5e9eac4a925c12d2378f0e9c0c2e66f6a3",
+  "feature_schema_version": "noone-features-v1",
+  "seed": 42,
+  "device": "cpu",
+  "versions": {
+    "python": "3.12.0",
+    "stable_baselines3": "2.5.0",
+    "gymnasium": "1.0.0",
+    "torch": "2.4.1+cpu",
+    "numpy": "2.5.4"
+  },
+  "total_timesteps_requested": 1100,
+  "resume_from": null,
+  "news": {
+    "dropout_probability": 0.1,
+    "news_asset": "BTC",
+    "news_max_age_hours": 24.0,
+    "archive_supplied": false
+  },
+  "data": {
+    "candle_count": 200,
+    "start_time": "2026-01-01T00:00:00+00:00",
+    "end_time": "2026-01-03T01:59:59+00:00"
+  },
+  "split": null,
+  "funding": {
+    "funding_mode": "constant",
+    "historical_accounting_implemented": false,
+    "funding_config": {
+      "funding_mode": "constant",
+      "funding_rate": 0.0001,
+      "funding_times_utc": [
+        "00:00",
+        "08:00",
+        "16:00"
+      ]
+    },
+    "funding_history": null,
+    "validation_status": "not_applicable_constant_mode",
+    "training_episode_count": 5,
+    "episode_funding_statistics": {
+      "basis": "independent_episodes_not_continuous_account",
+      "completed_episode_count": 5,
+      "aggregate_total_funding_across_completed_episodes": 2.5072693871338547,
+      "aggregate_ledger_entries_across_completed_episodes": 0,
+      "current_episode_total_funding": 1.5000169747372332,
+      "current_episode_ledger_entries": 0
+    },
+    "artifact_path": null,
+    "artifact_schema_version": null,
+    "artifact_checksum": null,
+    "collection_identity": null
+  },
+  "final_model": "runs\\probe_test\\final_model.zip",
+  "num_timesteps_trained": 1100
+}

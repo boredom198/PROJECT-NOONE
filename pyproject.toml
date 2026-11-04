@@ -1,0 +1,50 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "noone"
+version = "0.1.0"
+description = "PROJECT NOONE - Component 4 (Market & News Data APIs) + Component 2 (News Classifier)"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "Apache-2.0 (FinVADER upstream); project code MIT" }
+dependencies = [
+    "httpx>=0.27",
+    "websockets>=12",
+    "nltk>=3.8",
+    "pywebview==6.2.1",
+]
+
+[project.scripts]
+noone-ui = "noone.ui.launcher:main"
+# NOTE: finvader 1.0.4 pins nltk==3.6.2, which conflicts with modern
+# NLTK on Python >=3.12. Install it with --no-deps (see README); the
+# classifier only uses its two lexicon modules and degrades honestly
+# (degraded=True) when the package is absent.
+
+[project.optional-dependencies]
+dev = ["pytest>=8"]
+build = ["pyinstaller>=6"]
+finvader = ["finvader>=1.0"]
+exchange = ["ccxt==4.4.52"]
+# Component 1. Verified compatible set (Python 3.12): SB3 2.9.x
+# requires gymnasium >=0.29.1,<2, numpy <3, torch >=2.8,<3.
+# Install with: pip install -e ".[rl]" plus CPU-only torch from
+# the PyTorch CPU index (see README) to avoid CUDA wheels.
+rl = [
+    # Verified working set incl. save/load on Python 3.12.0/Windows:
+    # SB3 >=2.6 passes zip streams straight to torch.load, which
+    # fails here; SB3 2.5 loads via BytesIO and works (see README).
+    "stable-baselines3>=2.5,<2.6",
+    "gymnasium>=1.0,<1.1",
+    "numpy>=2.0,<3",
+    "torch>=2.4,<2.6",
+]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+markers = ["live: live API tests (run with NOONE_LIVE=1)"]

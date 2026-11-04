@@ -1,0 +1,1976 @@
+[
+  {
+    "experiment": "Exp_A_10k",
+    "run_id": "Exp_A_10k_seed_42",
+    "seed": 42,
+    "total_timesteps": 10000,
+    "learning_starts": 1000,
+    "decay_duration": 3000,
+    "train_seconds": 19.376463,
+    "training_diagnostics": {
+      "total_transitions": 10000,
+      "valid_actions": {
+        "HOLD": 7594,
+        "OPEN_LONG": 250,
+        "CLOSE_LONG": 240,
+        "OPEN_SHORT": 173,
+        "CLOSE_SHORT": 173
+      },
+      "invalid_actions": {
+        "HOLD": 0,
+        "OPEN_LONG": 404,
+        "CLOSE_LONG": 364,
+        "OPEN_SHORT": 382,
+        "CLOSE_SHORT": 420
+      },
+      "total_invalid_actions": 1570,
+      "total_penalties_applied": 156.99999999999537,
+      "time_flat_steps": 1901,
+      "time_long_steps": 6920,
+      "time_short_steps": 1179,
+      "time_flat_pct": 19.009999999999998,
+      "time_long_pct": 69.19999999999999,
+      "time_short_pct": 11.790000000000001,
+      "completed_round_trips": 413,
+      "epsilon_checks": {
+        "beginning": {
+          "step": 1000,
+          "epsilon": 1.0,
+          "expected": 1.0,
+          "verified": true
+        },
+        "middle": {
+          "step": 2500,
+          "epsilon": 0.5253166666666667,
+          "expected": 0.525,
+          "verified": true
+        },
+        "end": {
+          "step": 4001,
+          "epsilon": 0.05,
+          "expected": 0.05,
+          "verified": true
+        }
+      },
+      "epsilon_progression": [
+        {
+          "step": 500,
+          "epsilon": 1.0
+        },
+        {
+          "step": 1000,
+          "epsilon": 1.0
+        },
+        {
+          "step": 1500,
+          "epsilon": 0.8419833333333333
+        },
+        {
+          "step": 2000,
+          "epsilon": 0.6836500000000001
+        },
+        {
+          "step": 2500,
+          "epsilon": 0.5253166666666667
+        },
+        {
+          "step": 3000,
+          "epsilon": 0.3669833333333332
+        },
+        {
+          "step": 3500,
+          "epsilon": 0.2086500000000001
+        },
+        {
+          "step": 4000,
+          "epsilon": 0.05031666666666701
+        },
+        {
+          "step": 4500,
+          "epsilon": 0.05
+        },
+        {
+          "step": 5000,
+          "epsilon": 0.05
+        },
+        {
+          "step": 5500,
+          "epsilon": 0.05
+        },
+        {
+          "step": 6000,
+          "epsilon": 0.05
+        },
+        {
+          "step": 6500,
+          "epsilon": 0.05
+        },
+        {
+          "step": 7000,
+          "epsilon": 0.05
+        },
+        {
+          "step": 7500,
+          "epsilon": 0.05
+        },
+        {
+          "step": 8000,
+          "epsilon": 0.05
+        },
+        {
+          "step": 8500,
+          "epsilon": 0.05
+        },
+        {
+          "step": 9000,
+          "epsilon": 0.05
+        },
+        {
+          "step": 9500,
+          "epsilon": 0.05
+        },
+        {
+          "step": 10000,
+          "epsilon": 0.05
+        }
+      ],
+      "loss_initial": 0.014322709292173386,
+      "loss_final_mean": 0.01235454462468624,
+      "loss_history_samples": [
+        {
+          "step": 1005,
+          "loss": 0.014322709292173386
+        },
+        {
+          "step": 1454,
+          "loss": 0.006096308585256338
+        },
+        {
+          "step": 1903,
+          "loss": 0.008692914620041847
+        },
+        {
+          "step": 2352,
+          "loss": 0.007125461008399725
+        },
+        {
+          "step": 2801,
+          "loss": 0.008428088389337063
+        },
+        {
+          "step": 3250,
+          "loss": 0.008470061235129833
+        },
+        {
+          "step": 3699,
+          "loss": 0.008685898967087269
+        },
+        {
+          "step": 4148,
+          "loss": 0.006839005276560783
+        },
+        {
+          "step": 4597,
+          "loss": 0.0069628553465008736
+        },
+        {
+          "step": 5046,
+          "loss": 0.01180215459316969
+        },
+        {
+          "step": 5495,
+          "loss": 0.009177278727293015
+        },
+        {
+          "step": 5944,
+          "loss": 0.008565424010157585
+        },
+        {
+          "step": 6393,
+          "loss": 0.011343060992658138
+        },
+        {
+          "step": 6842,
+          "loss": 0.011567266657948494
+        },
+        {
+          "step": 7291,
+          "loss": 0.010579162277281284
+        },
+        {
+          "step": 7740,
+          "loss": 0.009031658992171288
+        },
+        {
+          "step": 8189,
+          "loss": 0.009268990717828274
+        },
+        {
+          "step": 8638,
+          "loss": 0.011046510189771652
+        },
+        {
+          "step": 9087,
+          "loss": 0.012293227016925812
+        },
+        {
+          "step": 9536,
+          "loss": 0.013406846672296524
+        },
+        {
+          "step": 9985,
+          "loss": 0.013808531686663628
+        }
+      ],
+      "q_distributions": {
+        "q_mean": -0.002498394111171365,
+        "q_std": 0.052415430545806885,
+        "q_min": -0.17132562398910522,
+        "q_max": 0.16797129809856415,
+        "target_q_mean": 0.062460288405418396,
+        "target_q_std": 0.17220409214496613,
+        "target_q_min": -0.5013174414634705,
+        "target_q_max": 0.6681486368179321,
+        "chosen_q_mean": 0.04893758147954941,
+        "chosen_q_std": 0.059403542429208755
+      }
+    },
+    "evaluation_diagnostics": {
+      "raw_action_counts": {
+        "HOLD": 236,
+        "OPEN_LONG": 3,
+        "CLOSE_LONG": 0,
+        "OPEN_SHORT": 0,
+        "CLOSE_SHORT": 0
+      },
+      "masked_action_counts": {
+        "HOLD": 238,
+        "OPEN_LONG": 1,
+        "CLOSE_LONG": 0,
+        "OPEN_SHORT": 0,
+        "CLOSE_SHORT": 0
+      },
+      "raw_invalid_count": 2,
+      "raw_invalid_rate_pct": 0.8368200836820083,
+      "hold_frequency_pct": 99.581589958159,
+      "raw_hold_frequency_pct": 98.74476987447699,
+      "num_trades": 0,
+      "total_return_pct": 2.035831480122563,
+      "max_drawdown_pct": 1.4809984979402642,
+      "win_rate_pct": 0.0,
+      "avg_winning_trade": 0.0,
+      "avg_losing_trade": 0.0,
+      "total_fees": 2.5,
+      "slippage_rate_pct": 0.02,
+      "total_funding": -3.6419986685902583,
+      "final_equity": 10203.583148012256,
+      "baseline_always_hold_return_pct": 0.0,
+      "baseline_random_return_pct": -3.468013378963697
+    }
+  },
+  {
+    "experiment": "Exp_A_10k",
+    "run_id": "Exp_A_10k_seed_43",
+    "seed": 43,
+    "total_timesteps": 10000,
+    "learning_starts": 1000,
+    "decay_duration": 3000,
+    "train_seconds": 18.748383,
+    "training_diagnostics": {
+      "total_transitions": 10000,
+      "valid_actions": {
+        "HOLD": 7406,
+        "OPEN_LONG": 344,
+        "CLOSE_LONG": 337,
+        "OPEN_SHORT": 161,
+        "CLOSE_SHORT": 161
+      },
+      "invalid_actions": {
+        "HOLD": 0,
+        "OPEN_LONG": 407,
+        "CLOSE_LONG": 263,
+        "OPEN_SHORT": 437,
+        "CLOSE_SHORT": 484
+      },
+      "total_invalid_actions": 1591,
+      "total_penalties_applied": 159.09999999999525,
+      "time_flat_steps": 1960,
+      "time_long_steps": 7327,
+      "time_short_steps": 713,
+      "time_flat_pct": 19.6,
+      "time_long_pct": 73.27,
+      "time_short_pct": 7.13,
+      "completed_round_trips": 498,
+      "epsilon_checks": {
+        "beginning": {
+          "step": 1000,
+          "epsilon": 1.0,
+          "expected": 1.0,
+          "verified": true
+        },
+        "middle": {
+          "step": 2500,
+          "epsilon": 0.5253166666666667,
+          "expected": 0.525,
+          "verified": true
+        },
+        "end": {
+          "step": 4001,
+          "epsilon": 0.05,
+          "expected": 0.05,
+          "verified": true
+        }
+      },
+      "epsilon_progression": [
+        {
+          "step": 500,
+          "epsilon": 1.0
+        },
+        {
+          "step": 1000,
+          "epsilon": 1.0
+        },
+        {
+          "step": 1500,
+          "epsilon": 0.8419833333333333
+        },
+        {
+          "step": 2000,
+          "epsilon": 0.6836500000000001
+        },
+        {
+          "step": 2500,
+          "epsilon": 0.5253166666666667
+        },
+        {
+          "step": 3000,
+          "epsilon": 0.3669833333333332
+        },
+        {
+          "step": 3500,
+          "epsilon": 0.2086500000000001
+        },
+        {
+          "step": 4000,
+          "epsilon": 0.05031666666666701
+        },
+        {
+          "step": 4500,
+          "epsilon": 0.05
+        },
+        {
+          "step": 5000,
+          "epsilon": 0.05
+        },
+        {
+          "step": 5500,
+          "epsilon": 0.05
+        },
+        {
+          "step": 6000,
+          "epsilon": 0.05
+        },
+        {
+          "step": 6500,
+          "epsilon": 0.05
+        },
+        {
+          "step": 7000,
+          "epsilon": 0.05
+        },
+        {
+          "step": 7500,
+          "epsilon": 0.05
+        },
+        {
+          "step": 8000,
+          "epsilon": 0.05
+        },
+        {
+          "step": 8500,
+          "epsilon": 0.05
+        },
+        {
+          "step": 9000,
+          "epsilon": 0.05
+        },
+        {
+          "step": 9500,
+          "epsilon": 0.05
+        },
+        {
+          "step": 10000,
+          "epsilon": 0.05
+        }
+      ],
+      "loss_initial": 0.010968632996082306,
+      "loss_final_mean": 0.011021236181259155,
+      "loss_history_samples": [
+        {
+          "step": 1005,
+          "loss": 0.010968632996082306
+        },
+        {
+          "step": 1454,
+          "loss": 0.012006893754005432
+        },
+        {
+          "step": 1903,
+          "loss": 0.009127040393650532
+        },
+        {
+          "step": 2352,
+          "loss": 0.006291624624282122
+        },
+        {
+          "step": 2801,
+          "loss": 0.010660314932465553
+        },
+        {
+          "step": 3250,
+          "loss": 0.010043340735137463
+        },
+        {
+          "step": 3699,
+          "loss": 0.006601989269256592
+        },
+        {
+          "step": 4148,
+          "loss": 0.010438341647386551
+        },
+        {
+          "step": 4597,
+          "loss": 0.009606687352061272
+        },
+        {
+          "step": 5046,
+          "loss": 0.009949028491973877
+        },
+        {
+          "step": 5495,
+          "loss": 0.009531065821647644
+        },
+        {
+          "step": 5944,
+          "loss": 0.009323619306087494
+        },
+        {
+          "step": 6393,
+          "loss": 0.015312912873923779
+        },
+        {
+          "step": 6842,
+          "loss": 0.00937787164002657
+        },
+        {
+          "step": 7291,
+          "loss": 0.010601191781461239
+        },
+        {
+          "step": 7740,
+          "loss": 0.010275442153215408
+        },
+        {
+          "step": 8189,
+          "loss": 0.01164089422672987
+        },
+        {
+          "step": 8638,
+          "loss": 0.012861077673733234
+        },
+        {
+          "step": 9087,
+          "loss": 0.010103719308972359
+        },
+        {
+          "step": 9536,
+          "loss": 0.015309599228203297
+        },
+        {
+          "step": 9985,
+          "loss": 0.013006513938307762
+        }
+      ],
+      "q_distributions": {
+        "q_mean": 0.012655453756451607,
+        "q_std": 0.049764372408390045,
+        "q_min": -0.17097553610801697,
+        "q_max": 0.1620303839445114,
+        "target_q_mean": 0.06540875136852264,
+        "target_q_std": 0.16169075667858124,
+        "target_q_min": -0.441941499710083,
+        "target_q_max": 0.6003461480140686,
+        "chosen_q_mean": 0.061496175825595856,
+        "chosen_q_std": 0.04773212969303131
+      }
+    },
+    "evaluation_diagnostics": {
+      "raw_action_counts": {
+        "HOLD": 223,
+        "OPEN_LONG": 8,
+        "CLOSE_LONG": 8,
+        "OPEN_SHORT": 0,
+        "CLOSE_SHORT": 0
+      },
+      "masked_action_counts": {
+        "HOLD": 223,
+        "OPEN_LONG": 8,
+        "CLOSE_LONG": 8,
+        "OPEN_SHORT": 0,
+        "CLOSE_SHORT": 0
+      },
+      "raw_invalid_count": 0,
+      "raw_invalid_rate_pct": 0.0,
+      "hold_frequency_pct": 93.30543933054393,
+      "raw_hold_frequency_pct": 93.30543933054393,
+      "num_trades": 8,
+      "total_return_pct": 1.2270946233534197,
+      "max_drawdown_pct": 1.2565664001731967,
+      "win_rate_pct": 50.0,
+      "avg_winning_trade": 68.42646894022852,
+      "avg_losing_trade": -27.085896656668076,
+      "total_fees": 40.64279165877735,
+      "slippage_rate_pct": 0.02,
+      "total_funding": -2.0100351401235077,
+      "final_equity": 10122.709462335342,
+      "baseline_always_hold_return_pct": 0.0,
+      "baseline_random_return_pct": -2.521874092079668
+    }
+  },
+  {
+    "experiment": "Exp_A_10k",
+    "run_id": "Exp_A_10k_seed_44",
+    "seed": 44,
+    "total_timesteps": 10000,
+    "learning_starts": 1000,
+    "decay_duration": 3000,
+    "train_seconds": 19.334068,
+    "training_diagnostics": {
+      "total_transitions": 10000,
+      "valid_actions": {
+        "HOLD": 7480,
+        "OPEN_LONG": 278,
+        "CLOSE_LONG": 269,
+        "OPEN_SHORT": 150,
+        "CLOSE_SHORT": 150
+      },
+      "invalid_actions": {
+        "HOLD": 0,
+        "OPEN_LONG": 427,
+        "CLOSE_LONG": 294,
+        "OPEN_SHORT": 417,
+        "CLOSE_SHORT": 535
+      },
+      "total_invalid_actions": 1673,
+      "total_penalties_applied": 167.29999999999478,
+      "time_flat_steps": 1556,
+      "time_long_steps": 7697,
+      "time_short_steps": 747,
+      "time_flat_pct": 15.559999999999999,
+      "time_long_pct": 76.97,
+      "time_short_pct": 7.470000000000001,
+      "completed_round_trips": 419,
+      "epsilon_checks": {
+        "beginning": {
+          "step": 1000,
+          "epsilon": 1.0,
+          "expected": 1.0,
+          "verified": true
+        },
+        "middle": {
+          "step": 2500,
+          "epsilon": 0.5253166666666667,
+          "expected": 0.525,
+          "verified": true
+        },
+        "end": {
+          "step": 4001,
+          "epsilon": 0.05,
+          "expected": 0.05,
+          "verified": true
+        }
+      },
+      "epsilon_progression": [
+        {
+          "step": 500,
+          "epsilon": 1.0
+        },
+        {
+          "step": 1000,
+          "epsilon": 1.0
+        },
+        {
+          "step": 1500,
+          "epsilon": 0.8419833333333333
+        },
+        {
+          "step": 2000,
+          "epsilon": 0.6836500000000001
+        },
+        {
+          "step": 2500,
+          "epsilon": 0.5253166666666667
+        },
+        {
+          "step": 3000,
+          "epsilon": 0.3669833333333332
+        },
+        {
+          "step": 3500,
+          "epsilon": 0.2086500000000001
+        },
+        {
+          "step": 4000,
+          "epsilon": 0.05031666666666701
+        },
+        {
+          "step": 4500,
+          "epsilon": 0.05
+        },
+        {
+          "step": 5000,
+          "epsilon": 0.05
+        },
+        {
+          "step": 5500,
+          "epsilon": 0.05
+        },
+        {
+          "step": 6000,
+          "epsilon": 0.05
+        },
+        {
+          "step": 6500,
+          "epsilon": 0.05
+        },
+        {
+          "step": 7000,
+          "epsilon": 0.05
+        },
+        {
+          "step": 7500,
+          "epsilon": 0.05
+        },
+        {
+          "step": 8000,
+          "epsilon": 0.05
+        },
+        {
+          "step": 8500,
+          "epsilon": 0.05
+        },
+        {
+          "step": 9000,
+          "epsilon": 0.05
+        },
+        {
+          "step": 9500,
+          "epsilon": 0.05
+        },
+        {
+          "step": 10000,
+          "epsilon": 0.05
+        }
+      ],
+      "loss_initial": 0.016887333244085312,
+      "loss_final_mean": 0.012941854856908321,
+      "loss_history_samples": [
+        {
+          "step": 1005,
+          "loss": 0.016887333244085312
+        },
+        {
+          "step": 1454,
+          "loss": 0.00830753706395626
+        },
+        {
+          "step": 1903,
+          "loss": 0.007550540380179882
+        },
+        {
+          "step": 2352,
+          "loss": 0.00485091470181942
+        },
+        {
+          "step": 2801,
+          "loss": 0.007989897392690182
+        },
+        {
+          "step": 3250,
+          "loss": 0.00988807063549757
+        },
+        {
+          "step": 3699,
+          "loss": 0.012782027944922447
+        },
+        {
+          "step": 4148,
+          "loss": 0.009025565348565578
+        },
+        {
+          "step": 4597,
+          "loss": 0.006267089396715164
+        },
+        {
+          "step": 5046,
+          "loss": 0.007186651695519686
+        },
+        {
+          "step": 5495,
+          "loss": 0.006397099234163761
+        },
+        {
+          "step": 5944,
+          "loss": 0.013104643672704697
+        },
+        {
+          "step": 6393,
+          "loss": 0.009403001517057419
+        },
+        {
+          "step": 6842,
+          "loss": 0.008730853907763958
+        },
+        {
+          "step": 7291,
+          "loss": 0.01251622848212719
+        },
+        {
+          "step": 7740,
+          "loss": 0.01358800008893013
+        },
+        {
+          "step": 8189,
+          "loss": 0.01398378424346447
+        },
+        {
+          "step": 8638,
+          "loss": 0.012091442011296749
+        },
+        {
+          "step": 9087,
+          "loss": 0.009097909554839134
+        },
+        {
+          "step": 9536,
+          "loss": 0.014344330877065659
+        },
+        {
+          "step": 9985,
+          "loss": 0.014852515421807766
+        }
+      ],
+      "q_distributions": {
+        "q_mean": 0.1341615915298462,
+        "q_std": 0.051295842975378036,
+        "q_min": -0.03679107502102852,
+        "q_max": 0.28528380393981934,
+        "target_q_mean": 0.1914319097995758,
+        "target_q_std": 0.17810119688510895,
+        "target_q_min": -0.41138479113578796,
+        "target_q_max": 0.8487223982810974,
+        "chosen_q_mean": 0.17641885578632355,
+        "chosen_q_std": 0.06139358505606651
+      }
+    },
+    "evaluation_diagnostics": {
+      "raw_action_counts": {
+        "HOLD": 238,
+        "OPEN_LONG": 1,
+        "CLOSE_LONG": 0,
+        "OPEN_SHORT": 0,
+        "CLOSE_SHORT": 0
+      },
+      "masked_action_counts": {
+        "HOLD": 238,
+        "OPEN_LONG": 1,
+        "CLOSE_LONG": 0,
+        "OPEN_SHORT": 0,
+        "CLOSE_SHORT": 0
+      },
+      "raw_invalid_count": 0,
+      "raw_invalid_rate_pct": 0.0,
+      "hold_frequency_pct": 99.581589958159,
+      "raw_hold_frequency_pct": 99.581589958159,
+      "num_trades": 0,
+      "total_return_pct": 2.035831480122563,
+      "max_drawdown_pct": 1.4809984979402642,
+      "win_rate_pct": 0.0,
+      "avg_winning_trade": 0.0,
+      "avg_losing_trade": 0.0,
+      "total_fees": 2.5,
+      "slippage_rate_pct": 0.02,
+      "total_funding": -3.6419986685902583,
+      "final_equity": 10203.583148012256,
+      "baseline_always_hold_return_pct": 0.0,
+      "baseline_random_return_pct": -4.078515320830068
+    }
+  },
+  {
+    "experiment": "Exp_B_25k",
+    "run_id": "Exp_B_25k_seed_42",
+    "seed": 42,
+    "total_timesteps": 25000,
+    "learning_starts": 1000,
+    "decay_duration": 8000,
+    "train_seconds": 50.165014,
+    "training_diagnostics": {
+      "total_transitions": 25000,
+      "valid_actions": {
+        "HOLD": 19540,
+        "OPEN_LONG": 764,
+        "CLOSE_LONG": 741,
+        "OPEN_SHORT": 333,
+        "CLOSE_SHORT": 332
+      },
+      "invalid_actions": {
+        "HOLD": 0,
+        "OPEN_LONG": 912,
+        "CLOSE_LONG": 563,
+        "OPEN_SHORT": 849,
+        "CLOSE_SHORT": 966
+      },
+      "total_invalid_actions": 3290,
+      "total_penalties_applied": 329.0000000000063,
+      "time_flat_steps": 2970,
+      "time_long_steps": 20670,
+      "time_short_steps": 1360,
+      "time_flat_pct": 11.88,
+      "time_long_pct": 82.67999999999999,
+      "time_short_pct": 5.4399999999999995,
+      "completed_round_trips": 1073,
+      "epsilon_checks": {
+        "beginning": {
+          "step": 1000,
+          "epsilon": 1.0,
+          "expected": 1.0,
+          "verified": true
+        },
+        "middle": {
+          "step": 5000,
+          "epsilon": 0.5251187499999999,
+          "expected": 0.525,
+          "verified": true
+        },
+        "end": {
+          "step": 9001,
+          "epsilon": 0.05,
+          "expected": 0.05,
+          "verified": true
+        }
+      },
+      "epsilon_progression": [
+        {
+          "step": 500,
+          "epsilon": 1.0
+        },
+        {
+          "step": 1000,
+          "epsilon": 1.0
+        },
+        {
+          "step": 1500,
+          "epsilon": 0.94074375
+        },
+        {
+          "step": 2000,
+          "epsilon": 0.8813687499999999
+        },
+        {
+          "step": 2500,
+          "epsilon": 0.8219937499999999
+        },
+        {
+          "step": 3000,
+          "epsilon": 0.7626187500000001
+        },
+        {
+          "step": 3500,
+          "epsilon": 0.7032437500000001
+        },
+        {
+          "step": 4000,
+          "epsilon": 0.64386875
+        },
+        {
+          "step": 4500,
+          "epsilon": 0.58449375
+        },
+        {
+          "step": 5000,
+          "epsilon": 0.5251187499999999
+        },
+        {
+          "step": 5500,
+          "epsilon": 0.46574375000000023
+        },
+        {
+          "step": 6000,
+          "epsilon": 0.40636875000000017
+        },
+        {
+          "step": 6500,
+          "epsilon": 0.3469937500000002
+        },
+        {
+          "step": 7000,
+          "epsilon": 0.28761875000000003
+        },
+        {
+          "step": 7500,
+          "epsilon": 0.22824375000000008
+        },
+        {
+          "step": 8000,
+          "epsilon": 0.16886875
+        },
+        {
+          "step": 8500,
+          "epsilon": 0.10949374999999983
+        },
+        {
+          "step": 9000,
+          "epsilon": 0.05011874999999988
+        },
+        {
+          "step": 9500,
+          "epsilon": 0.05
+        },
+        {
+          "step": 10000,
+          "epsilon": 0.05
+        },
+        {
+          "step": 10500,
+          "epsilon": 0.05
+        },
+        {
+          "step": 11000,
+          "epsilon": 0.05
+        },
+        {
+          "step": 11500,
+          "epsilon": 0.05
+        },
+        {
+          "step": 12000,
+          "epsilon": 0.05
+        },
+        {
+          "step": 12500,
+          "epsilon": 0.05
+        },
+        {
+          "step": 13000,
+          "epsilon": 0.05
+        },
+        {
+          "step": 13500,
+          "epsilon": 0.05
+        },
+        {
+          "step": 14000,
+          "epsilon": 0.05
+        },
+        {
+          "step": 14500,
+          "epsilon": 0.05
+        },
+        {
+          "step": 15000,
+          "epsilon": 0.05
+        },
+        {
+          "step": 15500,
+          "epsilon": 0.05
+        },
+        {
+          "step": 16000,
+          "epsilon": 0.05
+        },
+        {
+          "step": 16500,
+          "epsilon": 0.05
+        },
+        {
+          "step": 17000,
+          "epsilon": 0.05
+        },
+        {
+          "step": 17500,
+          "epsilon": 0.05
+        },
+        {
+          "step": 18000,
+          "epsilon": 0.05
+        },
+        {
+          "step": 18500,
+          "epsilon": 0.05
+        },
+        {
+          "step": 19000,
+          "epsilon": 0.05
+        },
+        {
+          "step": 19500,
+          "epsilon": 0.05
+        },
+        {
+          "step": 20000,
+          "epsilon": 0.05
+        },
+        {
+          "step": 20500,
+          "epsilon": 0.05
+        },
+        {
+          "step": 21000,
+          "epsilon": 0.05
+        },
+        {
+          "step": 21500,
+          "epsilon": 0.05
+        },
+        {
+          "step": 22000,
+          "epsilon": 0.05
+        },
+        {
+          "step": 22500,
+          "epsilon": 0.05
+        },
+        {
+          "step": 23000,
+          "epsilon": 0.05
+        },
+        {
+          "step": 23500,
+          "epsilon": 0.05
+        },
+        {
+          "step": 24000,
+          "epsilon": 0.05
+        },
+        {
+          "step": 24500,
+          "epsilon": 0.05
+        },
+        {
+          "step": 25000,
+          "epsilon": 0.05
+        }
+      ],
+      "loss_initial": 0.014322709292173386,
+      "loss_final_mean": 0.014775489270687104,
+      "loss_history_samples": [
+        {
+          "step": 1005,
+          "loss": 0.014322709292173386
+        },
+        {
+          "step": 2204,
+          "loss": 0.010152311064302921
+        },
+        {
+          "step": 3403,
+          "loss": 0.010266532190144062
+        },
+        {
+          "step": 4602,
+          "loss": 0.007163513917475939
+        },
+        {
+          "step": 5801,
+          "loss": 0.008670427836477757
+        },
+        {
+          "step": 7000,
+          "loss": 0.013196849264204502
+        },
+        {
+          "step": 8199,
+          "loss": 0.011800142005085945
+        },
+        {
+          "step": 9398,
+          "loss": 0.010148454457521439
+        },
+        {
+          "step": 10597,
+          "loss": 0.008334113284945488
+        },
+        {
+          "step": 11796,
+          "loss": 0.01639196276664734
+        },
+        {
+          "step": 12995,
+          "loss": 0.012073307298123837
+        },
+        {
+          "step": 14194,
+          "loss": 0.014999719336628914
+        },
+        {
+          "step": 15393,
+          "loss": 0.01354560162872076
+        },
+        {
+          "step": 16592,
+          "loss": 0.009718300774693489
+        },
+        {
+          "step": 17791,
+          "loss": 0.014929870143532753
+        },
+        {
+          "step": 18990,
+          "loss": 0.012698011472821236
+        },
+        {
+          "step": 20189,
+          "loss": 0.016965195536613464
+        },
+        {
+          "step": 21388,
+          "loss": 0.01608171872794628
+        },
+        {
+          "step": 22587,
+          "loss": 0.016163930296897888
+        },
+        {
+          "step": 23786,
+          "loss": 0.012965495698153973
+        },
+        {
+          "step": 24985,
+          "loss": 0.01471590157598257
+        }
+      ],
+      "q_distributions": {
+        "q_mean": 0.20523644983768463,
+        "q_std": 0.07222855091094971,
+        "q_min": -0.06576253473758698,
+        "q_max": 0.4457361698150635,
+        "target_q_mean": 0.2713190019130707,
+        "target_q_std": 0.19862589240074158,
+        "target_q_min": -0.39472681283950806,
+        "target_q_max": 0.9852620959281921,
+        "chosen_q_mean": 0.2654332220554352,
+        "chosen_q_std": 0.08289321511983871
+      }
+    },
+    "evaluation_diagnostics": {
+      "raw_action_counts": {
+        "HOLD": 238,
+        "OPEN_LONG": 1,
+        "CLOSE_LONG": 0,
+        "OPEN_SHORT": 0,
+        "CLOSE_SHORT": 0
+      },
+      "masked_action_counts": {
+        "HOLD": 238,
+        "OPEN_LONG": 1,
+        "CLOSE_LONG": 0,
+        "OPEN_SHORT": 0,
+        "CLOSE_SHORT": 0
+      },
+      "raw_invalid_count": 0,
+      "raw_invalid_rate_pct": 0.0,
+      "hold_frequency_pct": 99.581589958159,
+      "raw_hold_frequency_pct": 99.581589958159,
+      "num_trades": 0,
+      "total_return_pct": 1.7426269741835254,
+      "max_drawdown_pct": 1.476960508353382,
+      "win_rate_pct": 0.0,
+      "avg_winning_trade": 0.0,
+      "avg_losing_trade": 0.0,
+      "total_fees": 2.5,
+      "slippage_rate_pct": 0.02,
+      "total_funding": -3.621487078784737,
+      "final_equity": 10174.262697418353,
+      "baseline_always_hold_return_pct": 0.0,
+      "baseline_random_return_pct": -3.468013378963697
+    }
+  },
+  {
+    "experiment": "Exp_B_25k",
+    "run_id": "Exp_B_25k_seed_43",
+    "seed": 43,
+    "total_timesteps": 25000,
+    "learning_starts": 1000,
+    "decay_duration": 8000,
+    "train_seconds": 56.556221,
+    "training_diagnostics": {
+      "total_transitions": 25000,
+      "valid_actions": {
+        "HOLD": 19509,
+        "OPEN_LONG": 743,
+        "CLOSE_LONG": 722,
+        "OPEN_SHORT": 392,
+        "CLOSE_SHORT": 391
+      },
+      "invalid_actions": {
+        "HOLD": 0,
+        "OPEN_LONG": 798,
+        "CLOSE_LONG": 570,
+        "OPEN_SHORT": 825,
+        "CLOSE_SHORT": 1050
+      },
+      "total_invalid_actions": 3243,
+      "total_penalties_applied": 324.30000000000524,
+      "time_flat_steps": 5760,
+      "time_long_steps": 18023,
+      "time_short_steps": 1217,
+      "time_flat_pct": 23.04,
+      "time_long_pct": 72.092,
+      "time_short_pct": 4.868,
+      "completed_round_trips": 1113,
+      "epsilon_checks": {
+        "beginning": {
+          "step": 1000,
+          "epsilon": 1.0,
+          "expected": 1.0,
+          "verified": true
+        },
+        "middle": {
+          "step": 5000,
+          "epsilon": 0.5251187499999999,
+          "expected": 0.525,
+          "verified": true
+        },
+        "end": {
+          "step": 9001,
+          "epsilon": 0.05,
+          "expected": 0.05,
+          "verified": true
+        }
+      },
+      "epsilon_progression": [
+        {
+          "step": 500,
+          "epsilon": 1.0
+        },
+        {
+          "step": 1000,
+          "epsilon": 1.0
+        },
+        {
+          "step": 1500,
+          "epsilon": 0.94074375
+        },
+        {
+          "step": 2000,
+          "epsilon": 0.8813687499999999
+        },
+        {
+          "step": 2500,
+          "epsilon": 0.8219937499999999
+        },
+        {
+          "step": 3000,
+          "epsilon": 0.7626187500000001
+        },
+        {
+          "step": 3500,
+          "epsilon": 0.7032437500000001
+        },
+        {
+          "step": 4000,
+          "epsilon": 0.64386875
+        },
+        {
+          "step": 4500,
+          "epsilon": 0.58449375
+        },
+        {
+          "step": 5000,
+          "epsilon": 0.5251187499999999
+        },
+        {
+          "step": 5500,
+          "epsilon": 0.46574375000000023
+        },
+        {
+          "step": 6000,
+          "epsilon": 0.40636875000000017
+        },
+        {
+          "step": 6500,
+          "epsilon": 0.3469937500000002
+        },
+        {
+          "step": 7000,
+          "epsilon": 0.28761875000000003
+        },
+        {
+          "step": 7500,
+          "epsilon": 0.22824375000000008
+        },
+        {
+          "step": 8000,
+          "epsilon": 0.16886875
+        },
+        {
+          "step": 8500,
+          "epsilon": 0.10949374999999983
+        },
+        {
+          "step": 9000,
+          "epsilon": 0.05011874999999988
+        },
+        {
+          "step": 9500,
+          "epsilon": 0.05
+        },
+        {
+          "step": 10000,
+          "epsilon": 0.05
+        },
+        {
+          "step": 10500,
+          "epsilon": 0.05
+        },
+        {
+          "step": 11000,
+          "epsilon": 0.05
+        },
+        {
+          "step": 11500,
+          "epsilon": 0.05
+        },
+        {
+          "step": 12000,
+          "epsilon": 0.05
+        },
+        {
+          "step": 12500,
+          "epsilon": 0.05
+        },
+        {
+          "step": 13000,
+          "epsilon": 0.05
+        },
+        {
+          "step": 13500,
+          "epsilon": 0.05
+        },
+        {
+          "step": 14000,
+          "epsilon": 0.05
+        },
+        {
+          "step": 14500,
+          "epsilon": 0.05
+        },
+        {
+          "step": 15000,
+          "epsilon": 0.05
+        },
+        {
+          "step": 15500,
+          "epsilon": 0.05
+        },
+        {
+          "step": 16000,
+          "epsilon": 0.05
+        },
+        {
+          "step": 16500,
+          "epsilon": 0.05
+        },
+        {
+          "step": 17000,
+          "epsilon": 0.05
+        },
+        {
+          "step": 17500,
+          "epsilon": 0.05
+        },
+        {
+          "step": 18000,
+          "epsilon": 0.05
+        },
+        {
+          "step": 18500,
+          "epsilon": 0.05
+        },
+        {
+          "step": 19000,
+          "epsilon": 0.05
+        },
+        {
+          "step": 19500,
+          "epsilon": 0.05
+        },
+        {
+          "step": 20000,
+          "epsilon": 0.05
+        },
+        {
+          "step": 20500,
+          "epsilon": 0.05
+        },
+        {
+          "step": 21000,
+          "epsilon": 0.05
+        },
+        {
+          "step": 21500,
+          "epsilon": 0.05
+        },
+        {
+          "step": 22000,
+          "epsilon": 0.05
+        },
+        {
+          "step": 22500,
+          "epsilon": 0.05
+        },
+        {
+          "step": 23000,
+          "epsilon": 0.05
+        },
+        {
+          "step": 23500,
+          "epsilon": 0.05
+        },
+        {
+          "step": 24000,
+          "epsilon": 0.05
+        },
+        {
+          "step": 24500,
+          "epsilon": 0.05
+        },
+        {
+          "step": 25000,
+          "epsilon": 0.05
+        }
+      ],
+      "loss_initial": 0.010968632996082306,
+      "loss_final_mean": 0.015561543330550194,
+      "loss_history_samples": [
+        {
+          "step": 1005,
+          "loss": 0.010968632996082306
+        },
+        {
+          "step": 2204,
+          "loss": 0.007888225838541985
+        },
+        {
+          "step": 3403,
+          "loss": 0.008610212244093418
+        },
+        {
+          "step": 4602,
+          "loss": 0.006352963391691446
+        },
+        {
+          "step": 5801,
+          "loss": 0.007258537691086531
+        },
+        {
+          "step": 7000,
+          "loss": 0.007046663202345371
+        },
+        {
+          "step": 8199,
+          "loss": 0.009402969852089882
+        },
+        {
+          "step": 9398,
+          "loss": 0.013733627274632454
+        },
+        {
+          "step": 10597,
+          "loss": 0.006526685785502195
+        },
+        {
+          "step": 11796,
+          "loss": 0.015624228864908218
+        },
+        {
+          "step": 12995,
+          "loss": 0.010411608032882214
+        },
+        {
+          "step": 14194,
+          "loss": 0.006641067564487457
+        },
+        {
+          "step": 15393,
+          "loss": 0.008373342454433441
+        },
+        {
+          "step": 16592,
+          "loss": 0.012198035605251789
+        },
+        {
+          "step": 17791,
+          "loss": 0.008796374313533306
+        },
+        {
+          "step": 18990,
+          "loss": 0.013987173326313496
+        },
+        {
+          "step": 20189,
+          "loss": 0.012781421653926373
+        },
+        {
+          "step": 21388,
+          "loss": 0.01195816695690155
+        },
+        {
+          "step": 22587,
+          "loss": 0.010856234468519688
+        },
+        {
+          "step": 23786,
+          "loss": 0.01576383225619793
+        },
+        {
+          "step": 24985,
+          "loss": 0.015742946416139603
+        }
+      ],
+      "q_distributions": {
+        "q_mean": 0.16289527714252472,
+        "q_std": 0.06811727583408356,
+        "q_min": -0.0329204760491848,
+        "q_max": 0.3916032016277313,
+        "target_q_mean": 0.22781191766262054,
+        "target_q_std": 0.1881110519170761,
+        "target_q_min": -0.4419246017932892,
+        "target_q_max": 0.940924882888794,
+        "chosen_q_mean": 0.21851547062397003,
+        "chosen_q_std": 0.08266626298427582
+      }
+    },
+    "evaluation_diagnostics": {
+      "raw_action_counts": {
+        "HOLD": 238,
+        "OPEN_LONG": 1,
+        "CLOSE_LONG": 0,
+        "OPEN_SHORT": 0,
+        "CLOSE_SHORT": 0
+      },
+      "masked_action_counts": {
+        "HOLD": 238,
+        "OPEN_LONG": 1,
+        "CLOSE_LONG": 0,
+        "OPEN_SHORT": 0,
+        "CLOSE_SHORT": 0
+      },
+      "raw_invalid_count": 0,
+      "raw_invalid_rate_pct": 0.0,
+      "hold_frequency_pct": 99.581589958159,
+      "raw_hold_frequency_pct": 99.581589958159,
+      "num_trades": 0,
+      "total_return_pct": 2.035831480122563,
+      "max_drawdown_pct": 1.4809984979402642,
+      "win_rate_pct": 0.0,
+      "avg_winning_trade": 0.0,
+      "avg_losing_trade": 0.0,
+      "total_fees": 2.5,
+      "slippage_rate_pct": 0.02,
+      "total_funding": -3.6419986685902583,
+      "final_equity": 10203.583148012256,
+      "baseline_always_hold_return_pct": 0.0,
+      "baseline_random_return_pct": -2.521874092079668
+    }
+  },
+  {
+    "experiment": "Exp_B_25k",
+    "run_id": "Exp_B_25k_seed_44",
+    "seed": 44,
+    "total_timesteps": 25000,
+    "learning_starts": 1000,
+    "decay_duration": 8000,
+    "train_seconds": 55.402707,
+    "training_diagnostics": {
+      "total_transitions": 25000,
+      "valid_actions": {
+        "HOLD": 19335,
+        "OPEN_LONG": 858,
+        "CLOSE_LONG": 840,
+        "OPEN_SHORT": 358,
+        "CLOSE_SHORT": 358
+      },
+      "invalid_actions": {
+        "HOLD": 0,
+        "OPEN_LONG": 814,
+        "CLOSE_LONG": 548,
+        "OPEN_SHORT": 818,
+        "CLOSE_SHORT": 1071
+      },
+      "total_invalid_actions": 3251,
+      "total_penalties_applied": 325.1000000000054,
+      "time_flat_steps": 5477,
+      "time_long_steps": 18503,
+      "time_short_steps": 1020,
+      "time_flat_pct": 21.908,
+      "time_long_pct": 74.012,
+      "time_short_pct": 4.08,
+      "completed_round_trips": 1198,
+      "epsilon_checks": {
+        "beginning": {
+          "step": 1000,
+          "epsilon": 1.0,
+          "expected": 1.0,
+          "verified": true
+        },
+        "middle": {
+          "step": 5000,
+          "epsilon": 0.5251187499999999,
+          "expected": 0.525,
+          "verified": true
+        },
+        "end": {
+          "step": 9001,
+          "epsilon": 0.05,
+          "expected": 0.05,
+          "verified": true
+        }
+      },
+      "epsilon_progression": [
+        {
+          "step": 500,
+          "epsilon": 1.0
+        },
+        {
+          "step": 1000,
+          "epsilon": 1.0
+        },
+        {
+          "step": 1500,
+          "epsilon": 0.94074375
+        },
+        {
+          "step": 2000,
+          "epsilon": 0.8813687499999999
+        },
+        {
+          "step": 2500,
+          "epsilon": 0.8219937499999999
+        },
+        {
+          "step": 3000,
+          "epsilon": 0.7626187500000001
+        },
+        {
+          "step": 3500,
+          "epsilon": 0.7032437500000001
+        },
+        {
+          "step": 4000,
+          "epsilon": 0.64386875
+        },
+        {
+          "step": 4500,
+          "epsilon": 0.58449375
+        },
+        {
+          "step": 5000,
+          "epsilon": 0.5251187499999999
+        },
+        {
+          "step": 5500,
+          "epsilon": 0.46574375000000023
+        },
+        {
+          "step": 6000,
+          "epsilon": 0.40636875000000017
+        },
+        {
+          "step": 6500,
+          "epsilon": 0.3469937500000002
+        },
+        {
+          "step": 7000,
+          "epsilon": 0.28761875000000003
+        },
+        {
+          "step": 7500,
+          "epsilon": 0.22824375000000008
+        },
+        {
+          "step": 8000,
+          "epsilon": 0.16886875
+        },
+        {
+          "step": 8500,
+          "epsilon": 0.10949374999999983
+        },
+        {
+          "step": 9000,
+          "epsilon": 0.05011874999999988
+        },
+        {
+          "step": 9500,
+          "epsilon": 0.05
+        },
+        {
+          "step": 10000,
+          "epsilon": 0.05
+        },
+        {
+          "step": 10500,
+          "epsilon": 0.05
+        },
+        {
+          "step": 11000,
+          "epsilon": 0.05
+        },
+        {
+          "step": 11500,
+          "epsilon": 0.05
+        },
+        {
+          "step": 12000,
+          "epsilon": 0.05
+        },
+        {
+          "step": 12500,
+          "epsilon": 0.05
+        },
+        {
+          "step": 13000,
+          "epsilon": 0.05
+        },
+        {
+          "step": 13500,
+          "epsilon": 0.05
+        },
+        {
+          "step": 14000,
+          "epsilon": 0.05
+        },
+        {
+          "step": 14500,
+          "epsilon": 0.05
+        },
+        {
+          "step": 15000,
+          "epsilon": 0.05
+        },
+        {
+          "step": 15500,
+          "epsilon": 0.05
+        },
+        {
+          "step": 16000,
+          "epsilon": 0.05
+        },
+        {
+          "step": 16500,
+          "epsilon": 0.05
+        },
+        {
+          "step": 17000,
+          "epsilon": 0.05
+        },
+        {
+          "step": 17500,
+          "epsilon": 0.05
+        },
+        {
+          "step": 18000,
+          "epsilon": 0.05
+        },
+        {
+          "step": 18500,
+          "epsilon": 0.05
+        },
+        {
+          "step": 19000,
+          "epsilon": 0.05
+        },
+        {
+          "step": 19500,
+          "epsilon": 0.05
+        },
+        {
+          "step": 20000,
+          "epsilon": 0.05
+        },
+        {
+          "step": 20500,
+          "epsilon": 0.05
+        },
+        {
+          "step": 21000,
+          "epsilon": 0.05
+        },
+        {
+          "step": 21500,
+          "epsilon": 0.05
+        },
+        {
+          "step": 22000,
+          "epsilon": 0.05
+        },
+        {
+          "step": 22500,
+          "epsilon": 0.05
+        },
+        {
+          "step": 23000,
+          "epsilon": 0.05
+        },
+        {
+          "step": 23500,
+          "epsilon": 0.05
+        },
+        {
+          "step": 24000,
+          "epsilon": 0.05
+        },
+        {
+          "step": 24500,
+          "epsilon": 0.05
+        },
+        {
+          "step": 25000,
+          "epsilon": 0.05
+        }
+      ],
+      "loss_initial": 0.016887333244085312,
+      "loss_final_mean": 0.012946517579257489,
+      "loss_history_samples": [
+        {
+          "step": 1005,
+          "loss": 0.016887333244085312
+        },
+        {
+          "step": 2204,
+          "loss": 0.00979295838624239
+        },
+        {
+          "step": 3403,
+          "loss": 0.0106078265234828
+        },
+        {
+          "step": 4602,
+          "loss": 0.010507076978683472
+        },
+        {
+          "step": 5801,
+          "loss": 0.012977983802556992
+        },
+        {
+          "step": 7000,
+          "loss": 0.008557193912565708
+        },
+        {
+          "step": 8199,
+          "loss": 0.010004295036196709
+        },
+        {
+          "step": 9398,
+          "loss": 0.010750342160463333
+        },
+        {
+          "step": 10597,
+          "loss": 0.011925986036658287
+        },
+        {
+          "step": 11796,
+          "loss": 0.006845186930149794
+        },
+        {
+          "step": 12995,
+          "loss": 0.008290362544357777
+        },
+        {
+          "step": 14194,
+          "loss": 0.012106907553970814
+        },
+        {
+          "step": 15393,
+          "loss": 0.01734355464577675
+        },
+        {
+          "step": 16592,
+          "loss": 0.010301515460014343
+        },
+        {
+          "step": 17791,
+          "loss": 0.015007788315415382
+        },
+        {
+          "step": 18990,
+          "loss": 0.010303533636033535
+        },
+        {
+          "step": 20189,
+          "loss": 0.013107847422361374
+        },
+        {
+          "step": 21388,
+          "loss": 0.008503371849656105
+        },
+        {
+          "step": 22587,
+          "loss": 0.012114135548472404
+        },
+        {
+          "step": 23786,
+          "loss": 0.014348803088068962
+        },
+        {
+          "step": 24985,
+          "loss": 0.011581062339246273
+        }
+      ],
+      "q_distributions": {
+        "q_mean": 0.2052319049835205,
+        "q_std": 0.05672271177172661,
+        "q_min": 0.032393403351306915,
+        "q_max": 0.41880515217781067,
+        "target_q_mean": 0.2586367130279541,
+        "target_q_std": 0.17743010818958282,
+        "target_q_min": -0.4006049633026123,
+        "target_q_max": 0.9468343257904053,
+        "chosen_q_mean": 0.2547195851802826,
+        "chosen_q_std": 0.06570092588663101
+      }
+    },
+    "evaluation_diagnostics": {
+      "raw_action_counts": {
+        "HOLD": 238,
+        "OPEN_LONG": 1,
+        "CLOSE_LONG": 0,
+        "OPEN_SHORT": 0,
+        "CLOSE_SHORT": 0
+      },
+      "masked_action_counts": {
+        "HOLD": 238,
+        "OPEN_LONG": 1,
+        "CLOSE_LONG": 0,
+        "OPEN_SHORT": 0,
+        "CLOSE_SHORT": 0
+      },
+      "raw_invalid_count": 0,
+      "raw_invalid_rate_pct": 0.0,
+      "hold_frequency_pct": 99.581589958159,
+      "raw_hold_frequency_pct": 99.581589958159,
+      "num_trades": 0,
+      "total_return_pct": 1.7426269741835254,
+      "max_drawdown_pct": 1.476960508353382,
+      "win_rate_pct": 0.0,
+      "avg_winning_trade": 0.0,
+      "avg_losing_trade": 0.0,
+      "total_fees": 2.5,
+      "slippage_rate_pct": 0.02,
+      "total_funding": -3.621487078784737,
+      "final_equity": 10174.262697418353,
+      "baseline_always_hold_return_pct": 0.0,
+      "baseline_random_return_pct": -4.078515320830068
+    }
+  }
+]

@@ -1,0 +1,1288 @@
+{
+  "dataset_statistics": {
+    "bull_train": {
+      "name": "bull_train",
+      "count": 400,
+      "start_time": "2026-01-01T12:30:00+00:00",
+      "end_time": "2026-01-05T16:29:59+00:00",
+      "start_price": 60000.0,
+      "end_price": 68999.99999999994,
+      "min_price": 59950.50557978499,
+      "max_price": 69580.30049935966,
+      "return_pct": 14.999999999999902,
+      "vol_annual_pct": 62.25620876524771,
+      "max_drawdown_pct": 2.677788030396304,
+      "up_bars": 222,
+      "down_bars": 178,
+      "up_bar_ratio": 0.555
+    },
+    "bear_train": {
+      "name": "bear_train",
+      "count": 400,
+      "start_time": "2026-01-01T12:30:00+00:00",
+      "end_time": "2026-01-05T16:29:59+00:00",
+      "start_price": 60000.0,
+      "end_price": 51000.000000000044,
+      "min_price": 50396.849467148204,
+      "max_price": 62752.94602992513,
+      "return_pct": -14.999999999999927,
+      "vol_annual_pct": 68.94475404603746,
+      "max_drawdown_pct": 19.41285911489722,
+      "up_bars": 181,
+      "down_bars": 219,
+      "up_bar_ratio": 0.4525
+    },
+    "side_train": {
+      "name": "side_train",
+      "count": 400,
+      "start_time": "2026-01-01T12:30:00+00:00",
+      "end_time": "2026-01-05T16:29:59+00:00",
+      "start_price": 60000.0,
+      "end_price": 59999.99999999994,
+      "min_price": 57102.10947650395,
+      "max_price": 62782.59122655697,
+      "return_pct": -9.701276818911235e-14,
+      "vol_annual_pct": 75.22122508121416,
+      "max_drawdown_pct": 8.806957704043391,
+      "up_bars": 201,
+      "down_bars": 199,
+      "up_bar_ratio": 0.5025
+    },
+    "bull_eval": {
+      "name": "bull_eval",
+      "count": 200,
+      "start_time": "2026-01-06T05:00:00+00:00",
+      "end_time": "2026-01-08T06:59:59+00:00",
+      "start_price": 68999.99999999993,
+      "end_price": 74174.99999999985,
+      "min_price": 68508.78438722859,
+      "max_price": 76235.28863107278,
+      "return_pct": 7.499999999999902,
+      "vol_annual_pct": 61.929029479198725,
+      "max_drawdown_pct": 2.696985871459229,
+      "up_bars": 105,
+      "down_bars": 95,
+      "up_bar_ratio": 0.525
+    },
+    "bear_eval": {
+      "name": "bear_eval",
+      "count": 200,
+      "start_time": "2026-01-06T05:00:00+00:00",
+      "end_time": "2026-01-08T06:59:59+00:00",
+      "start_price": 51000.00000000002,
+      "end_price": 47175.00000000011,
+      "min_price": 46933.045921435776,
+      "max_price": 52515.05417418334,
+      "return_pct": -7.499999999999826,
+      "vol_annual_pct": 71.86866046359762,
+      "max_drawdown_pct": 10.461003611126236,
+      "up_bars": 92,
+      "down_bars": 108,
+      "up_bar_ratio": 0.46
+    },
+    "side_eval": {
+      "name": "side_eval",
+      "count": 200,
+      "start_time": "2026-01-06T05:00:00+00:00",
+      "end_time": "2026-01-08T06:59:59+00:00",
+      "start_price": 59999.99999999994,
+      "end_price": 59999.99999999994,
+      "min_price": 58756.85590815152,
+      "max_price": 63517.687749165976,
+      "return_pct": 0.0,
+      "vol_annual_pct": 74.07705719714824,
+      "max_drawdown_pct": 5.457910694203552,
+      "up_bars": 102,
+      "down_bars": 98,
+      "up_bar_ratio": 0.51
+    }
+  },
+  "baselines": {
+    "bull": {
+      "always_hold": {
+        "baseline": "always_hold",
+        "total_return_pct": 0.0,
+        "final_equity": 10000.0,
+        "completed_trades": 0,
+        "win_rate_pct": 0.0,
+        "avg_win": 0.0,
+        "avg_loss": 0.0,
+        "total_fees": 0.0,
+        "total_funding": 0.0,
+        "time_flat_pct": 100.0,
+        "time_long_pct": 0.0,
+        "time_short_pct": 0.0,
+        "action_counts": {
+          "HOLD": 199,
+          "OPEN_LONG": 0,
+          "CLOSE_LONG": 0,
+          "OPEN_SHORT": 0,
+          "CLOSE_SHORT": 0
+        }
+      },
+      "buy_and_hold": {
+        "baseline": "buy_and_hold",
+        "total_return_pct": 3.8718243423534915,
+        "final_equity": 10387.18243423535,
+        "completed_trades": 0,
+        "win_rate_pct": 0.0,
+        "avg_win": 0.0,
+        "avg_loss": 0.0,
+        "total_fees": 2.5,
+        "total_funding": -3.1603162430611267,
+        "time_flat_pct": 0.5025125628140703,
+        "time_long_pct": 99.49748743718592,
+        "time_short_pct": 0.0,
+        "action_counts": {
+          "HOLD": 198,
+          "OPEN_LONG": 1,
+          "CLOSE_LONG": 0,
+          "OPEN_SHORT": 0,
+          "CLOSE_SHORT": 0
+        }
+      },
+      "momentum": {
+        "baseline": "momentum",
+        "total_return_pct": -0.35044951503745425,
+        "final_equity": 9964.955048496255,
+        "completed_trades": 9,
+        "win_rate_pct": 77.77777777777779,
+        "avg_win": 46.70386068217381,
+        "avg_loss": -151.26226618446685,
+        "total_fees": 47.3129697877515,
+        "total_funding": 2.5621215019687686,
+        "time_flat_pct": 5.025125628140704,
+        "time_long_pct": 13.06532663316583,
+        "time_short_pct": 81.90954773869346,
+        "action_counts": {
+          "HOLD": 180,
+          "OPEN_LONG": 5,
+          "CLOSE_LONG": 4,
+          "OPEN_SHORT": 5,
+          "CLOSE_SHORT": 5
+        }
+      }
+    },
+    "bear": {
+      "always_hold": {
+        "baseline": "always_hold",
+        "total_return_pct": 0.0,
+        "final_equity": 10000.0,
+        "completed_trades": 0,
+        "win_rate_pct": 0.0,
+        "avg_win": 0.0,
+        "avg_loss": 0.0,
+        "total_fees": 0.0,
+        "total_funding": 0.0,
+        "time_flat_pct": 100.0,
+        "time_long_pct": 0.0,
+        "time_short_pct": 0.0,
+        "action_counts": {
+          "HOLD": 199,
+          "OPEN_LONG": 0,
+          "CLOSE_LONG": 0,
+          "OPEN_SHORT": 0,
+          "CLOSE_SHORT": 0
+        }
+      },
+      "buy_and_hold": {
+        "baseline": "buy_and_hold",
+        "total_return_pct": -3.722724937997335,
+        "final_equity": 9627.727506200266,
+        "completed_trades": 0,
+        "win_rate_pct": 0.0,
+        "avg_win": 0.0,
+        "avg_loss": 0.0,
+        "total_fees": 2.5,
+        "total_funding": -2.9092805758517017,
+        "time_flat_pct": 0.5025125628140703,
+        "time_long_pct": 99.49748743718592,
+        "time_short_pct": 0.0,
+        "action_counts": {
+          "HOLD": 198,
+          "OPEN_LONG": 1,
+          "CLOSE_LONG": 0,
+          "OPEN_SHORT": 0,
+          "CLOSE_SHORT": 0
+        }
+      },
+      "momentum": {
+        "baseline": "momentum",
+        "total_return_pct": -2.0398976528119395,
+        "final_equity": 9796.010234718806,
+        "completed_trades": 9,
+        "win_rate_pct": 77.77777777777779,
+        "avg_win": 31.576857206982602,
+        "avg_loss": -146.74711891370364,
+        "total_fees": 46.869095939355745,
+        "total_funding": -0.4402260799832074,
+        "time_flat_pct": 5.025125628140704,
+        "time_long_pct": 69.34673366834171,
+        "time_short_pct": 25.628140703517587,
+        "action_counts": {
+          "HOLD": 180,
+          "OPEN_LONG": 6,
+          "CLOSE_LONG": 5,
+          "OPEN_SHORT": 4,
+          "CLOSE_SHORT": 4
+        }
+      }
+    },
+    "sideways": {
+      "always_hold": {
+        "baseline": "always_hold",
+        "total_return_pct": 0.0,
+        "final_equity": 10000.0,
+        "completed_trades": 0,
+        "win_rate_pct": 0.0,
+        "avg_win": 0.0,
+        "avg_loss": 0.0,
+        "total_fees": 0.0,
+        "total_funding": 0.0,
+        "time_flat_pct": 100.0,
+        "time_long_pct": 0.0,
+        "time_short_pct": 0.0,
+        "action_counts": {
+          "HOLD": 199,
+          "OPEN_LONG": 0,
+          "CLOSE_LONG": 0,
+          "OPEN_SHORT": 0,
+          "CLOSE_SHORT": 0
+        }
+      },
+      "buy_and_hold": {
+        "baseline": "buy_and_hold",
+        "total_return_pct": 0.05814147078646581,
+        "final_equity": 10005.814147078647,
+        "completed_trades": 0,
+        "win_rate_pct": 0.0,
+        "avg_win": 0.0,
+        "avg_loss": 0.0,
+        "total_fees": 2.5,
+        "total_funding": -3.081653278983577,
+        "time_flat_pct": 0.5025125628140703,
+        "time_long_pct": 99.49748743718592,
+        "time_short_pct": 0.0,
+        "action_counts": {
+          "HOLD": 198,
+          "OPEN_LONG": 1,
+          "CLOSE_LONG": 0,
+          "OPEN_SHORT": 0,
+          "CLOSE_SHORT": 0
+        }
+      },
+      "momentum": {
+        "baseline": "momentum",
+        "total_return_pct": -2.999162983971515,
+        "final_equity": 9700.083701602849,
+        "completed_trades": 7,
+        "win_rate_pct": 42.857142857142854,
+        "avg_win": 42.65754418724478,
+        "avg_loss": -69.81504013138657,
+        "total_fees": 37.031807965042226,
+        "total_funding": 1.0615132996632894,
+        "time_flat_pct": 4.0201005025125625,
+        "time_long_pct": 40.20100502512563,
+        "time_short_pct": 55.778894472361806,
+        "action_counts": {
+          "HOLD": 184,
+          "OPEN_LONG": 4,
+          "CLOSE_LONG": 3,
+          "OPEN_SHORT": 4,
+          "CLOSE_SHORT": 4
+        }
+      }
+    },
+    "composite": {
+      "always_hold": {
+        "baseline": "always_hold",
+        "total_return_pct": 0.0,
+        "final_equity": 10000.0,
+        "completed_trades": 0,
+        "win_rate_pct": 0.0,
+        "avg_win": 0.0,
+        "avg_loss": 0.0,
+        "total_fees": 0.0,
+        "total_funding": 0.0,
+        "time_flat_pct": 100.0,
+        "time_long_pct": 0.0,
+        "time_short_pct": 0.0,
+        "action_counts": {
+          "HOLD": 599,
+          "OPEN_LONG": 0,
+          "CLOSE_LONG": 0,
+          "OPEN_SHORT": 0,
+          "CLOSE_SHORT": 0
+        }
+      },
+      "buy_and_hold": {
+        "baseline": "buy_and_hold",
+        "total_return_pct": -13.003352971435579,
+        "final_equity": 8699.664702856442,
+        "completed_trades": 1,
+        "win_rate_pct": 0.0,
+        "avg_win": 0.0,
+        "avg_loss": -1292.8213915962965,
+        "total_fees": 4.3535893042018525,
+        "total_funding": -3.1603162430611267,
+        "time_flat_pct": 0.5,
+        "time_long_pct": 99.5,
+        "time_short_pct": 0.0,
+        "action_counts": {
+          "HOLD": 199,
+          "OPEN_LONG": 1,
+          "CLOSE_LONG": 0,
+          "OPEN_SHORT": 0,
+          "CLOSE_SHORT": 0
+        }
+      },
+      "momentum": {
+        "baseline": "momentum",
+        "total_return_pct": -16.823695276975535,
+        "final_equity": 8317.630472302446,
+        "completed_trades": 8,
+        "win_rate_pct": 62.5,
+        "avg_win": 45.45485996663566,
+        "avg_loss": -624.4929052190329,
+        "total_fees": 38.72617002618634,
+        "total_funding": 2.561058152549733,
+        "time_flat_pct": 4.0,
+        "time_long_pct": 10.5,
+        "time_short_pct": 85.5,
+        "action_counts": {
+          "HOLD": 185,
+          "OPEN_LONG": 4,
+          "CLOSE_LONG": 3,
+          "OPEN_SHORT": 4,
+          "CLOSE_SHORT": 4
+        }
+      }
+    }
+  },
+  "dqn_models": [
+    {
+      "model_name": "multi_regime",
+      "run_id": "multi_regime_seed_42",
+      "seed": 42,
+      "train_candles": 1200,
+      "total_timesteps": 15000,
+      "train_seconds": 31.525919,
+      "evaluations": {
+        "bull": {
+          "total_return_pct": 0.0,
+          "final_equity": 10000.0,
+          "completed_trades": 0,
+          "win_rate_pct": 0.0,
+          "avg_win": 0.0,
+          "avg_loss": 0.0,
+          "total_fees": 0.0,
+          "total_funding": 0.0,
+          "time_flat_pct": 100.0,
+          "time_long_pct": 0.0,
+          "time_short_pct": 0.0,
+          "raw_invalid_count": 0,
+          "raw_invalid_pct": 0.0,
+          "masked_action_counts": {
+            "HOLD": 199,
+            "OPEN_LONG": 0,
+            "CLOSE_LONG": 0,
+            "OPEN_SHORT": 0,
+            "CLOSE_SHORT": 0
+          },
+          "raw_action_counts": {
+            "HOLD": 199,
+            "OPEN_LONG": 0,
+            "CLOSE_LONG": 0,
+            "OPEN_SHORT": 0,
+            "CLOSE_SHORT": 0
+          },
+          "mean_q_values": {
+            "HOLD": 0.03144097983387847,
+            "OPEN_LONG": -0.016426880436776273,
+            "CLOSE_LONG": -0.05962456686038468,
+            "OPEN_SHORT": 0.006443593632336238,
+            "CLOSE_SHORT": -0.0681051878661067
+          }
+        },
+        "bear": {
+          "total_return_pct": 0.905121583775359,
+          "final_equity": 10090.512158377536,
+          "completed_trades": 0,
+          "win_rate_pct": 0.0,
+          "avg_win": 0.0,
+          "avg_loss": 0.0,
+          "total_fees": 2.5,
+          "total_funding": 1.0018717802104828,
+          "time_flat_pct": 56.28140703517588,
+          "time_long_pct": 0.0,
+          "time_short_pct": 43.71859296482412,
+          "raw_invalid_count": 0,
+          "raw_invalid_pct": 0.0,
+          "masked_action_counts": {
+            "HOLD": 198,
+            "OPEN_LONG": 0,
+            "CLOSE_LONG": 0,
+            "OPEN_SHORT": 1,
+            "CLOSE_SHORT": 0
+          },
+          "raw_action_counts": {
+            "HOLD": 198,
+            "OPEN_LONG": 0,
+            "CLOSE_LONG": 0,
+            "OPEN_SHORT": 1,
+            "CLOSE_SHORT": 0
+          },
+          "mean_q_values": {
+            "HOLD": 0.04236830928217825,
+            "OPEN_LONG": -0.03310422557195527,
+            "CLOSE_LONG": -0.05135261405952013,
+            "OPEN_SHORT": -0.006938756710320861,
+            "CLOSE_SHORT": -0.03267057600370304
+          }
+        },
+        "sideways": {
+          "total_return_pct": -0.5525085391921869,
+          "final_equity": 9944.749146080781,
+          "completed_trades": 0,
+          "win_rate_pct": 0.0,
+          "avg_win": 0.0,
+          "avg_loss": 0.0,
+          "total_fees": 2.5,
+          "total_funding": 2.5977095600223223,
+          "time_flat_pct": 20.100502512562816,
+          "time_long_pct": 0.0,
+          "time_short_pct": 79.89949748743719,
+          "raw_invalid_count": 0,
+          "raw_invalid_pct": 0.0,
+          "masked_action_counts": {
+            "HOLD": 198,
+            "OPEN_LONG": 0,
+            "CLOSE_LONG": 0,
+            "OPEN_SHORT": 1,
+            "CLOSE_SHORT": 0
+          },
+          "raw_action_counts": {
+            "HOLD": 198,
+            "OPEN_LONG": 0,
+            "CLOSE_LONG": 0,
+            "OPEN_SHORT": 1,
+            "CLOSE_SHORT": 0
+          },
+          "mean_q_values": {
+            "HOLD": 0.037764074851819616,
+            "OPEN_LONG": -0.05230276774259368,
+            "CLOSE_LONG": -0.050775492545123674,
+            "OPEN_SHORT": -0.026228856445107626,
+            "CLOSE_SHORT": -0.007056883508199124
+          }
+        },
+        "composite": {
+          "total_return_pct": -8.047741353386828,
+          "final_equity": 9195.225864661317,
+          "completed_trades": 2,
+          "win_rate_pct": 0.0,
+          "avg_win": 0.0,
+          "avg_loss": -421.8089585614985,
+          "total_fees": 12.700901788475505,
+          "total_funding": 5.652989528172714,
+          "time_flat_pct": 38.230383973288816,
+          "time_long_pct": 0.1669449081803005,
+          "time_short_pct": 61.602671118530886,
+          "raw_invalid_count": 0,
+          "raw_invalid_pct": 0.0,
+          "masked_action_counts": {
+            "HOLD": 594,
+            "OPEN_LONG": 1,
+            "CLOSE_LONG": 1,
+            "OPEN_SHORT": 2,
+            "CLOSE_SHORT": 1
+          },
+          "raw_action_counts": {
+            "HOLD": 594,
+            "OPEN_LONG": 1,
+            "CLOSE_LONG": 1,
+            "OPEN_SHORT": 2,
+            "CLOSE_SHORT": 1
+          },
+          "mean_q_values": {
+            "HOLD": 0.05170319936796401,
+            "OPEN_LONG": -0.03434423163520772,
+            "CLOSE_LONG": -0.04316259377662447,
+            "OPEN_SHORT": -0.014174761987588243,
+            "CLOSE_SHORT": -0.01514692240408645
+          }
+        }
+      }
+    },
+    {
+      "model_name": "multi_regime",
+      "run_id": "multi_regime_seed_43",
+      "seed": 43,
+      "train_candles": 1200,
+      "total_timesteps": 15000,
+      "train_seconds": 32.701881,
+      "evaluations": {
+        "bull": {
+          "total_return_pct": -3.943387384698893,
+          "final_equity": 9605.661261530111,
+          "completed_trades": 0,
+          "win_rate_pct": 0.0,
+          "avg_win": 0.0,
+          "avg_loss": 0.0,
+          "total_fees": 2.5,
+          "total_funding": 3.161580622434224,
+          "time_flat_pct": 0.5025125628140703,
+          "time_long_pct": 0.0,
+          "time_short_pct": 99.49748743718592,
+          "raw_invalid_count": 0,
+          "raw_invalid_pct": 0.0,
+          "masked_action_counts": {
+            "HOLD": 198,
+            "OPEN_LONG": 0,
+            "CLOSE_LONG": 0,
+            "OPEN_SHORT": 1,
+            "CLOSE_SHORT": 0
+          },
+          "raw_action_counts": {
+            "HOLD": 198,
+            "OPEN_LONG": 0,
+            "CLOSE_LONG": 0,
+            "OPEN_SHORT": 1,
+            "CLOSE_SHORT": 0
+          },
+          "mean_q_values": {
+            "HOLD": 0.15413515805149797,
+            "OPEN_LONG": 0.06400341117501858,
+            "CLOSE_LONG": 0.06298169512395284,
+            "OPEN_SHORT": 0.07958923916720864,
+            "CLOSE_SHORT": 0.08322320104899568
+          }
+        },
+        "bear": {
+          "total_return_pct": 3.654200323049528,
+          "final_equity": 10365.420032304954,
+          "completed_trades": 0,
+          "win_rate_pct": 0.0,
+          "avg_win": 0.0,
+          "avg_loss": 0.0,
+          "total_fees": 2.5,
+          "total_funding": 2.9104445208710463,
+          "time_flat_pct": 0.5025125628140703,
+          "time_long_pct": 0.0,
+          "time_short_pct": 99.49748743718592,
+          "raw_invalid_count": 0,
+          "raw_invalid_pct": 0.0,
+          "masked_action_counts": {
+            "HOLD": 198,
+            "OPEN_LONG": 0,
+            "CLOSE_LONG": 0,
+            "OPEN_SHORT": 1,
+            "CLOSE_SHORT": 0
+          },
+          "raw_action_counts": {
+            "HOLD": 198,
+            "OPEN_LONG": 0,
+            "CLOSE_LONG": 0,
+            "OPEN_SHORT": 1,
+            "CLOSE_SHORT": 0
+          },
+          "mean_q_values": {
+            "HOLD": 0.16375838665656708,
+            "OPEN_LONG": 0.06109238537636834,
+            "CLOSE_LONG": 0.06294039161361042,
+            "OPEN_SHORT": 0.07689911611939794,
+            "CLOSE_SHORT": 0.08425144780539538
+          }
+        },
+        "sideways": {
+          "total_return_pct": -0.12817873482759978,
+          "final_equity": 9987.18212651724,
+          "completed_trades": 0,
+          "win_rate_pct": 0.0,
+          "avg_win": 0.0,
+          "avg_loss": 0.0,
+          "total_fees": 2.5,
+          "total_funding": 3.08288618687675,
+          "time_flat_pct": 0.5025125628140703,
+          "time_long_pct": 0.0,
+          "time_short_pct": 99.49748743718592,
+          "raw_invalid_count": 0,
+          "raw_invalid_pct": 0.0,
+          "masked_action_counts": {
+            "HOLD": 198,
+            "OPEN_LONG": 0,
+            "CLOSE_LONG": 0,
+            "OPEN_SHORT": 1,
+            "CLOSE_SHORT": 0
+          },
+          "raw_action_counts": {
+            "HOLD": 198,
+            "OPEN_LONG": 0,
+            "CLOSE_LONG": 0,
+            "OPEN_SHORT": 1,
+            "CLOSE_SHORT": 0
+          },
+          "mean_q_values": {
+            "HOLD": 0.15743251448150855,
+            "OPEN_LONG": 0.06290757950002225,
+            "CLOSE_LONG": 0.063040187357733,
+            "OPEN_SHORT": 0.07760743817417466,
+            "CLOSE_SHORT": 0.0830389401412115
+          }
+        },
+        "composite": {
+          "total_return_pct": 6.626025197592544,
+          "final_equity": 10662.602519759255,
+          "completed_trades": 2,
+          "win_rate_pct": 50.0,
+          "avg_win": 645.9193441764664,
+          "avg_loss": -37.83948504431542,
+          "total_fees": 12.67035527820105,
+          "total_funding": 8.896647570460123,
+          "time_flat_pct": 0.5008347245409015,
+          "time_long_pct": 0.0,
+          "time_short_pct": 99.4991652754591,
+          "raw_invalid_count": 3,
+          "raw_invalid_pct": 0.5008347245409015,
+          "masked_action_counts": {
+            "HOLD": 594,
+            "OPEN_LONG": 0,
+            "CLOSE_LONG": 0,
+            "OPEN_SHORT": 3,
+            "CLOSE_SHORT": 2
+          },
+          "raw_action_counts": {
+            "HOLD": 591,
+            "OPEN_LONG": 2,
+            "CLOSE_LONG": 0,
+            "OPEN_SHORT": 4,
+            "CLOSE_SHORT": 2
+          },
+          "mean_q_values": {
+            "HOLD": 0.16344491903590838,
+            "OPEN_LONG": 0.06126265772595031,
+            "CLOSE_LONG": 0.059966928516833336,
+            "OPEN_SHORT": 0.07649472510389274,
+            "CLOSE_SHORT": 0.08577171496064316
+          }
+        }
+      }
+    },
+    {
+      "model_name": "trend_only",
+      "run_id": "trend_only_seed_42",
+      "seed": 42,
+      "train_candles": 800,
+      "total_timesteps": 10000,
+      "train_seconds": 17.418634,
+      "evaluations": {
+        "bull": {
+          "total_return_pct": -4.903639869790188,
+          "final_equity": 9509.636013020981,
+          "completed_trades": 2,
+          "win_rate_pct": 0.0,
+          "avg_win": 0.0,
+          "avg_loss": -279.62972843053427,
+          "total_fees": 12.465509600921571,
+          "total_funding": 3.01791395533999,
+          "time_flat_pct": 4.0201005025125625,
+          "time_long_pct": 0.0,
+          "time_short_pct": 95.97989949748744,
+          "raw_invalid_count": 0,
+          "raw_invalid_pct": 0.0,
+          "masked_action_counts": {
+            "HOLD": 194,
+            "OPEN_LONG": 0,
+            "CLOSE_LONG": 0,
+            "OPEN_SHORT": 3,
+            "CLOSE_SHORT": 2
+          },
+          "raw_action_counts": {
+            "HOLD": 194,
+            "OPEN_LONG": 0,
+            "CLOSE_LONG": 0,
+            "OPEN_SHORT": 3,
+            "CLOSE_SHORT": 2
+          },
+          "mean_q_values": {
+            "HOLD": 0.06389034702325586,
+            "OPEN_LONG": -0.03361952211239829,
+            "CLOSE_LONG": -0.032241022766535,
+            "OPEN_SHORT": -0.002562551043141427,
+            "CLOSE_SHORT": 0.025261018687306937
+          }
+        },
+        "bear": {
+          "total_return_pct": 3.4405799209562105,
+          "final_equity": 10344.05799209562,
+          "completed_trades": 1,
+          "win_rate_pct": 100.0,
+          "avg_win": 345.99486158307195,
+          "avg_loss": 0.0,
+          "total_fees": 4.827002569208464,
+          "total_funding": 2.8901330817572966,
+          "time_flat_pct": 4.0201005025125625,
+          "time_long_pct": 0.0,
+          "time_short_pct": 95.97989949748744,
+          "raw_invalid_count": 1,
+          "raw_invalid_pct": 0.5025125628140703,
+          "masked_action_counts": {
+            "HOLD": 197,
+            "OPEN_LONG": 0,
+            "CLOSE_LONG": 0,
+            "OPEN_SHORT": 1,
+            "CLOSE_SHORT": 1
+          },
+          "raw_action_counts": {
+            "HOLD": 197,
+            "OPEN_LONG": 1,
+            "CLOSE_LONG": 0,
+            "OPEN_SHORT": 1,
+            "CLOSE_SHORT": 0
+          },
+          "mean_q_values": {
+            "HOLD": 0.08000450824672853,
+            "OPEN_LONG": -0.0344933500354314,
+            "CLOSE_LONG": -0.023282099047198367,
+            "OPEN_SHORT": -0.001230084529174632,
+            "CLOSE_SHORT": 0.024799876102251026
+          }
+        },
+        "sideways": {
+          "total_return_pct": 0.6061894928945266,
+          "final_equity": 10060.618949289454,
+          "completed_trades": 0,
+          "win_rate_pct": 0.0,
+          "avg_win": 0.0,
+          "avg_loss": 0.0,
+          "total_fees": 2.5,
+          "total_funding": 3.0376999587272775,
+          "time_flat_pct": 4.0201005025125625,
+          "time_long_pct": 0.0,
+          "time_short_pct": 95.97989949748744,
+          "raw_invalid_count": 0,
+          "raw_invalid_pct": 0.0,
+          "masked_action_counts": {
+            "HOLD": 198,
+            "OPEN_LONG": 0,
+            "CLOSE_LONG": 0,
+            "OPEN_SHORT": 1,
+            "CLOSE_SHORT": 0
+          },
+          "raw_action_counts": {
+            "HOLD": 198,
+            "OPEN_LONG": 0,
+            "CLOSE_LONG": 0,
+            "OPEN_SHORT": 1,
+            "CLOSE_SHORT": 0
+          },
+          "mean_q_values": {
+            "HOLD": 0.06928388441178068,
+            "OPEN_LONG": -0.032917531862405675,
+            "CLOSE_LONG": -0.028991608978740535,
+            "OPEN_SHORT": -0.0026780132709735604,
+            "CLOSE_SHORT": 0.024653637734939105
+          }
+        },
+        "composite": {
+          "total_return_pct": 10.519479471575789,
+          "final_equity": 11051.94794715758,
+          "completed_trades": 16,
+          "win_rate_pct": 25.0,
+          "avg_win": 441.59145499958163,
+          "avg_loss": -54.68667825804289,
+          "total_fees": 84.72507199586113,
+          "total_funding": 8.502231786841817,
+          "time_flat_pct": 5.509181969949917,
+          "time_long_pct": 0.0,
+          "time_short_pct": 94.49081803005008,
+          "raw_invalid_count": 1,
+          "raw_invalid_pct": 0.1669449081803005,
+          "masked_action_counts": {
+            "HOLD": 566,
+            "OPEN_LONG": 0,
+            "CLOSE_LONG": 0,
+            "OPEN_SHORT": 17,
+            "CLOSE_SHORT": 16
+          },
+          "raw_action_counts": {
+            "HOLD": 566,
+            "OPEN_LONG": 0,
+            "CLOSE_LONG": 0,
+            "OPEN_SHORT": 16,
+            "CLOSE_SHORT": 17
+          },
+          "mean_q_values": {
+            "HOLD": 0.08488373410186803,
+            "OPEN_LONG": -0.0378363594577612,
+            "CLOSE_LONG": -0.02332643633288563,
+            "OPEN_SHORT": 0.003043531867767216,
+            "CLOSE_SHORT": 0.026255789223766087
+          }
+        }
+      }
+    },
+    {
+      "model_name": "trend_only",
+      "run_id": "trend_only_seed_43",
+      "seed": 43,
+      "train_candles": 800,
+      "total_timesteps": 10000,
+      "train_seconds": 18.426195,
+      "evaluations": {
+        "bull": {
+          "total_return_pct": 0.0,
+          "final_equity": 10000.0,
+          "completed_trades": 0,
+          "win_rate_pct": 0.0,
+          "avg_win": 0.0,
+          "avg_loss": 0.0,
+          "total_fees": 0.0,
+          "total_funding": 0.0,
+          "time_flat_pct": 100.0,
+          "time_long_pct": 0.0,
+          "time_short_pct": 0.0,
+          "raw_invalid_count": 1,
+          "raw_invalid_pct": 0.5025125628140703,
+          "masked_action_counts": {
+            "HOLD": 199,
+            "OPEN_LONG": 0,
+            "CLOSE_LONG": 0,
+            "OPEN_SHORT": 0,
+            "CLOSE_SHORT": 0
+          },
+          "raw_action_counts": {
+            "HOLD": 198,
+            "OPEN_LONG": 0,
+            "CLOSE_LONG": 1,
+            "OPEN_SHORT": 0,
+            "CLOSE_SHORT": 0
+          },
+          "mean_q_values": {
+            "HOLD": 0.028193193445702893,
+            "OPEN_LONG": -0.04050186356932074,
+            "CLOSE_LONG": -0.06769526241599914,
+            "OPEN_SHORT": -0.02438920929129399,
+            "CLOSE_SHORT": -0.07578702993578647
+          }
+        },
+        "bear": {
+          "total_return_pct": 0.0,
+          "final_equity": 10000.0,
+          "completed_trades": 0,
+          "win_rate_pct": 0.0,
+          "avg_win": 0.0,
+          "avg_loss": 0.0,
+          "total_fees": 0.0,
+          "total_funding": 0.0,
+          "time_flat_pct": 100.0,
+          "time_long_pct": 0.0,
+          "time_short_pct": 0.0,
+          "raw_invalid_count": 1,
+          "raw_invalid_pct": 0.5025125628140703,
+          "masked_action_counts": {
+            "HOLD": 199,
+            "OPEN_LONG": 0,
+            "CLOSE_LONG": 0,
+            "OPEN_SHORT": 0,
+            "CLOSE_SHORT": 0
+          },
+          "raw_action_counts": {
+            "HOLD": 198,
+            "OPEN_LONG": 0,
+            "CLOSE_LONG": 1,
+            "OPEN_SHORT": 0,
+            "CLOSE_SHORT": 0
+          },
+          "mean_q_values": {
+            "HOLD": 0.029114861294028148,
+            "OPEN_LONG": -0.0421511577301888,
+            "CLOSE_LONG": -0.06673107191396119,
+            "OPEN_SHORT": -0.024159542542306622,
+            "CLOSE_SHORT": -0.07618090130351296
+          }
+        },
+        "sideways": {
+          "total_return_pct": 0.0,
+          "final_equity": 10000.0,
+          "completed_trades": 0,
+          "win_rate_pct": 0.0,
+          "avg_win": 0.0,
+          "avg_loss": 0.0,
+          "total_fees": 0.0,
+          "total_funding": 0.0,
+          "time_flat_pct": 100.0,
+          "time_long_pct": 0.0,
+          "time_short_pct": 0.0,
+          "raw_invalid_count": 1,
+          "raw_invalid_pct": 0.5025125628140703,
+          "masked_action_counts": {
+            "HOLD": 199,
+            "OPEN_LONG": 0,
+            "CLOSE_LONG": 0,
+            "OPEN_SHORT": 0,
+            "CLOSE_SHORT": 0
+          },
+          "raw_action_counts": {
+            "HOLD": 198,
+            "OPEN_LONG": 0,
+            "CLOSE_LONG": 1,
+            "OPEN_SHORT": 0,
+            "CLOSE_SHORT": 0
+          },
+          "mean_q_values": {
+            "HOLD": 0.02843376430659438,
+            "OPEN_LONG": -0.042656751826929684,
+            "CLOSE_LONG": -0.06679961093743543,
+            "OPEN_SHORT": -0.02458717016943136,
+            "CLOSE_SHORT": -0.07592627312520042
+          }
+        },
+        "composite": {
+          "total_return_pct": 0.0,
+          "final_equity": 10000.0,
+          "completed_trades": 0,
+          "win_rate_pct": 0.0,
+          "avg_win": 0.0,
+          "avg_loss": 0.0,
+          "total_fees": 0.0,
+          "total_funding": 0.0,
+          "time_flat_pct": 100.0,
+          "time_long_pct": 0.0,
+          "time_short_pct": 0.0,
+          "raw_invalid_count": 3,
+          "raw_invalid_pct": 0.5008347245409015,
+          "masked_action_counts": {
+            "HOLD": 599,
+            "OPEN_LONG": 0,
+            "CLOSE_LONG": 0,
+            "OPEN_SHORT": 0,
+            "CLOSE_SHORT": 0
+          },
+          "raw_action_counts": {
+            "HOLD": 596,
+            "OPEN_LONG": 0,
+            "CLOSE_LONG": 3,
+            "OPEN_SHORT": 0,
+            "CLOSE_SHORT": 0
+          },
+          "mean_q_values": {
+            "HOLD": 0.02825323938359452,
+            "OPEN_LONG": -0.04259214012297446,
+            "CLOSE_LONG": -0.06702113306407936,
+            "OPEN_SHORT": -0.025500911217997586,
+            "CLOSE_SHORT": -0.07547793164227364
+          }
+        }
+      }
+    },
+    {
+      "model_name": "range_only",
+      "run_id": "range_only_seed_42",
+      "seed": 42,
+      "train_candles": 400,
+      "total_timesteps": 10000,
+      "train_seconds": 13.564581,
+      "evaluations": {
+        "bull": {
+          "total_return_pct": -3.943387384698893,
+          "final_equity": 9605.661261530111,
+          "completed_trades": 0,
+          "win_rate_pct": 0.0,
+          "avg_win": 0.0,
+          "avg_loss": 0.0,
+          "total_fees": 2.5,
+          "total_funding": 3.161580622434224,
+          "time_flat_pct": 0.5025125628140703,
+          "time_long_pct": 0.0,
+          "time_short_pct": 99.49748743718592,
+          "raw_invalid_count": 0,
+          "raw_invalid_pct": 0.0,
+          "masked_action_counts": {
+            "HOLD": 198,
+            "OPEN_LONG": 0,
+            "CLOSE_LONG": 0,
+            "OPEN_SHORT": 1,
+            "CLOSE_SHORT": 0
+          },
+          "raw_action_counts": {
+            "HOLD": 198,
+            "OPEN_LONG": 0,
+            "CLOSE_LONG": 0,
+            "OPEN_SHORT": 1,
+            "CLOSE_SHORT": 0
+          },
+          "mean_q_values": {
+            "HOLD": 0.11108018167728755,
+            "OPEN_LONG": 0.029677463423966162,
+            "CLOSE_LONG": 0.027514790231595986,
+            "OPEN_SHORT": 0.0030759094685465847,
+            "CLOSE_SHORT": 0.04591247186663762
+          }
+        },
+        "bear": {
+          "total_return_pct": 3.3342854716630344,
+          "final_equity": 10333.428547166304,
+          "completed_trades": 1,
+          "win_rate_pct": 100.0,
+          "avg_win": 317.31714271915365,
+          "avg_loss": 0.0,
+          "total_fees": 7.420187364443014,
+          "total_funding": 2.9079419198511323,
+          "time_flat_pct": 1.507537688442211,
+          "time_long_pct": 0.0,
+          "time_short_pct": 98.49246231155779,
+          "raw_invalid_count": 0,
+          "raw_invalid_pct": 0.0,
+          "masked_action_counts": {
+            "HOLD": 196,
+            "OPEN_LONG": 0,
+            "CLOSE_LONG": 0,
+            "OPEN_SHORT": 2,
+            "CLOSE_SHORT": 1
+          },
+          "raw_action_counts": {
+            "HOLD": 196,
+            "OPEN_LONG": 0,
+            "CLOSE_LONG": 0,
+            "OPEN_SHORT": 2,
+            "CLOSE_SHORT": 1
+          },
+          "mean_q_values": {
+            "HOLD": 0.11253473885245059,
+            "OPEN_LONG": 0.02045495689720215,
+            "CLOSE_LONG": 0.028249685095632495,
+            "OPEN_SHORT": 0.020398275636548373,
+            "CLOSE_SHORT": 0.04054589584544675
+          }
+        },
+        "sideways": {
+          "total_return_pct": -0.12817873482759978,
+          "final_equity": 9987.18212651724,
+          "completed_trades": 0,
+          "win_rate_pct": 0.0,
+          "avg_win": 0.0,
+          "avg_loss": 0.0,
+          "total_fees": 2.5,
+          "total_funding": 3.08288618687675,
+          "time_flat_pct": 0.5025125628140703,
+          "time_long_pct": 0.0,
+          "time_short_pct": 99.49748743718592,
+          "raw_invalid_count": 0,
+          "raw_invalid_pct": 0.0,
+          "masked_action_counts": {
+            "HOLD": 198,
+            "OPEN_LONG": 0,
+            "CLOSE_LONG": 0,
+            "OPEN_SHORT": 1,
+            "CLOSE_SHORT": 0
+          },
+          "raw_action_counts": {
+            "HOLD": 198,
+            "OPEN_LONG": 0,
+            "CLOSE_LONG": 0,
+            "OPEN_SHORT": 1,
+            "CLOSE_SHORT": 0
+          },
+          "mean_q_values": {
+            "HOLD": 0.1110286297622937,
+            "OPEN_LONG": 0.026010117474849798,
+            "CLOSE_LONG": 0.02787920891134134,
+            "OPEN_SHORT": 0.008317976909216923,
+            "CLOSE_SHORT": 0.04442414092882794
+          }
+        },
+        "composite": {
+          "total_return_pct": 0.07940206773595637,
+          "final_equity": 10007.940206773595,
+          "completed_trades": 2,
+          "win_rate_pct": 50.0,
+          "avg_win": 1556.1744702817148,
+          "avg_loss": -1543.098600165335,
+          "total_fees": 10.77225664034902,
+          "total_funding": 5.6365932975646995,
+          "time_flat_pct": 3.0,
+          "time_long_pct": 0.0,
+          "time_short_pct": 97.0,
+          "raw_invalid_count": 0,
+          "raw_invalid_pct": 0.0,
+          "masked_action_counts": {
+            "HOLD": 397,
+            "OPEN_LONG": 0,
+            "CLOSE_LONG": 0,
+            "OPEN_SHORT": 2,
+            "CLOSE_SHORT": 1
+          },
+          "raw_action_counts": {
+            "HOLD": 397,
+            "OPEN_LONG": 0,
+            "CLOSE_LONG": 0,
+            "OPEN_SHORT": 2,
+            "CLOSE_SHORT": 1
+          },
+          "mean_q_values": {
+            "HOLD": 0.11049641662277282,
+            "OPEN_LONG": 0.013886848415713757,
+            "CLOSE_LONG": 0.024348242850974203,
+            "OPEN_SHORT": 0.02986266911961138,
+            "CLOSE_SHORT": 0.03529426243621856
+          }
+        }
+      }
+    },
+    {
+      "model_name": "range_only",
+      "run_id": "range_only_seed_43",
+      "seed": 43,
+      "train_candles": 400,
+      "total_timesteps": 10000,
+      "train_seconds": 13.439048,
+      "evaluations": {
+        "bull": {
+          "total_return_pct": 0.0,
+          "final_equity": 10000.0,
+          "completed_trades": 0,
+          "win_rate_pct": 0.0,
+          "avg_win": 0.0,
+          "avg_loss": 0.0,
+          "total_fees": 0.0,
+          "total_funding": 0.0,
+          "time_flat_pct": 100.0,
+          "time_long_pct": 0.0,
+          "time_short_pct": 0.0,
+          "raw_invalid_count": 0,
+          "raw_invalid_pct": 0.0,
+          "masked_action_counts": {
+            "HOLD": 199,
+            "OPEN_LONG": 0,
+            "CLOSE_LONG": 0,
+            "OPEN_SHORT": 0,
+            "CLOSE_SHORT": 0
+          },
+          "raw_action_counts": {
+            "HOLD": 199,
+            "OPEN_LONG": 0,
+            "CLOSE_LONG": 0,
+            "OPEN_SHORT": 0,
+            "CLOSE_SHORT": 0
+          },
+          "mean_q_values": {
+            "HOLD": 0.06673902613883043,
+            "OPEN_LONG": 0.02525480585781174,
+            "CLOSE_LONG": -0.031835730917676906,
+            "OPEN_SHORT": -0.006418174853426727,
+            "CLOSE_SHORT": -0.022784254256280223
+          }
+        },
+        "bear": {
+          "total_return_pct": 0.0,
+          "final_equity": 10000.0,
+          "completed_trades": 0,
+          "win_rate_pct": 0.0,
+          "avg_win": 0.0,
+          "avg_loss": 0.0,
+          "total_fees": 0.0,
+          "total_funding": 0.0,
+          "time_flat_pct": 100.0,
+          "time_long_pct": 0.0,
+          "time_short_pct": 0.0,
+          "raw_invalid_count": 0,
+          "raw_invalid_pct": 0.0,
+          "masked_action_counts": {
+            "HOLD": 199,
+            "OPEN_LONG": 0,
+            "CLOSE_LONG": 0,
+            "OPEN_SHORT": 0,
+            "CLOSE_SHORT": 0
+          },
+          "raw_action_counts": {
+            "HOLD": 199,
+            "OPEN_LONG": 0,
+            "CLOSE_LONG": 0,
+            "OPEN_SHORT": 0,
+            "CLOSE_SHORT": 0
+          },
+          "mean_q_values": {
+            "HOLD": 0.06893459608282276,
+            "OPEN_LONG": 0.02631060788454722,
+            "CLOSE_LONG": -0.02964938402026143,
+            "OPEN_SHORT": -0.004490300694751979,
+            "CLOSE_SHORT": -0.021525272332019542
+          }
+        },
+        "sideways": {
+          "total_return_pct": 0.0,
+          "final_equity": 10000.0,
+          "completed_trades": 0,
+          "win_rate_pct": 0.0,
+          "avg_win": 0.0,
+          "avg_loss": 0.0,
+          "total_fees": 0.0,
+          "total_funding": 0.0,
+          "time_flat_pct": 100.0,
+          "time_long_pct": 0.0,
+          "time_short_pct": 0.0,
+          "raw_invalid_count": 0,
+          "raw_invalid_pct": 0.0,
+          "masked_action_counts": {
+            "HOLD": 199,
+            "OPEN_LONG": 0,
+            "CLOSE_LONG": 0,
+            "OPEN_SHORT": 0,
+            "CLOSE_SHORT": 0
+          },
+          "raw_action_counts": {
+            "HOLD": 199,
+            "OPEN_LONG": 0,
+            "CLOSE_LONG": 0,
+            "OPEN_SHORT": 0,
+            "CLOSE_SHORT": 0
+          },
+          "mean_q_values": {
+            "HOLD": 0.0678077751218374,
+            "OPEN_LONG": 0.0255002208877748,
+            "CLOSE_LONG": -0.030510112119080432,
+            "OPEN_SHORT": -0.005568433403220009,
+            "CLOSE_SHORT": -0.022090738592435367
+          }
+        },
+        "composite": {
+          "total_return_pct": 0.0,
+          "final_equity": 10000.0,
+          "completed_trades": 0,
+          "win_rate_pct": 0.0,
+          "avg_win": 0.0,
+          "avg_loss": 0.0,
+          "total_fees": 0.0,
+          "total_funding": 0.0,
+          "time_flat_pct": 100.0,
+          "time_long_pct": 0.0,
+          "time_short_pct": 0.0,
+          "raw_invalid_count": 0,
+          "raw_invalid_pct": 0.0,
+          "masked_action_counts": {
+            "HOLD": 599,
+            "OPEN_LONG": 0,
+            "CLOSE_LONG": 0,
+            "OPEN_SHORT": 0,
+            "CLOSE_SHORT": 0
+          },
+          "raw_action_counts": {
+            "HOLD": 599,
+            "OPEN_LONG": 0,
+            "CLOSE_LONG": 0,
+            "OPEN_SHORT": 0,
+            "CLOSE_SHORT": 0
+          },
+          "mean_q_values": {
+            "HOLD": 0.06754037042541775,
+            "OPEN_LONG": 0.024997767148063656,
+            "CLOSE_LONG": -0.030791607220503246,
+            "OPEN_SHORT": -0.005638714550134535,
+            "CLOSE_SHORT": -0.02198397712579902
+          }
+        }
+      }
+    }
+  ]
+}

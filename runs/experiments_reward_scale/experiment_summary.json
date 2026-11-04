@@ -1,0 +1,312 @@
+[
+  {
+    "run_id": "scale_1_seed_42",
+    "reward_scale": 1.0,
+    "seed": 42,
+    "invalid_action_penalty": 0.001,
+    "q_mean": 0.04206340091934264,
+    "q_std": 0.0025457357828004195,
+    "q_margin_mean": 0.0016548337266784332,
+    "raw_action_counts": {
+      "HOLD": 104,
+      "OPEN_LONG": 30,
+      "CLOSE_LONG": 10,
+      "OPEN_SHORT": 52,
+      "CLOSE_SHORT": 43
+    },
+    "masked_action_counts": {
+      "HOLD": 115,
+      "OPEN_LONG": 12,
+      "CLOSE_LONG": 12,
+      "OPEN_SHORT": 50,
+      "CLOSE_SHORT": 50
+    },
+    "raw_invalid_count": 35,
+    "raw_invalid_pct": 14.644351464435147,
+    "hold_freq": 0.4811715481171548,
+    "raw_hold_freq": 0.4351464435146444,
+    "return_pct": -6.442143068864903,
+    "max_drawdown_pct": 6.4421430688648975,
+    "trade_count": 0,
+    "final_equity": 10000.0
+  },
+  {
+    "run_id": "scale_1_seed_43",
+    "reward_scale": 1.0,
+    "seed": 43,
+    "invalid_action_penalty": 0.001,
+    "q_mean": 0.06406755569277947,
+    "q_std": 0.0034135592127044964,
+    "q_margin_mean": 0.0008280246545829534,
+    "raw_action_counts": {
+      "HOLD": 102,
+      "OPEN_LONG": 9,
+      "CLOSE_LONG": 5,
+      "OPEN_SHORT": 104,
+      "CLOSE_SHORT": 19
+    },
+    "masked_action_counts": {
+      "HOLD": 222,
+      "OPEN_LONG": 9,
+      "CLOSE_LONG": 8,
+      "OPEN_SHORT": 0,
+      "CLOSE_SHORT": 0
+    },
+    "raw_invalid_count": 123,
+    "raw_invalid_pct": 51.46443514644351,
+    "hold_freq": 0.9288702928870293,
+    "raw_hold_freq": 0.42677824267782427,
+    "return_pct": 1.6766250748812217,
+    "max_drawdown_pct": 1.3330051893699648,
+    "trade_count": 0,
+    "final_equity": 10000.0
+  },
+  {
+    "run_id": "scale_1_seed_44",
+    "reward_scale": 1.0,
+    "seed": 44,
+    "invalid_action_penalty": 0.001,
+    "q_mean": 0.11183434948636897,
+    "q_std": 0.006347093776850168,
+    "q_margin_mean": 0.0032894313647158476,
+    "raw_action_counts": {
+      "HOLD": 8,
+      "OPEN_LONG": 15,
+      "CLOSE_LONG": 0,
+      "OPEN_SHORT": 163,
+      "CLOSE_SHORT": 53
+    },
+    "masked_action_counts": {
+      "HOLD": 212,
+      "OPEN_LONG": 9,
+      "CLOSE_LONG": 8,
+      "OPEN_SHORT": 5,
+      "CLOSE_SHORT": 5
+    },
+    "raw_invalid_count": 216,
+    "raw_invalid_pct": 90.3765690376569,
+    "hold_freq": 0.8870292887029289,
+    "raw_hold_freq": 0.03347280334728033,
+    "return_pct": 1.658410676658062,
+    "max_drawdown_pct": 1.2707883298516067,
+    "trade_count": 0,
+    "final_equity": 10000.0
+  },
+  {
+    "run_id": "scale_100_seed_42",
+    "reward_scale": 100.0,
+    "seed": 42,
+    "invalid_action_penalty": 0.001,
+    "q_mean": -0.05726342116985236,
+    "q_std": 0.0645189371837823,
+    "q_margin_mean": 0.04242750832803204,
+    "raw_action_counts": {
+      "HOLD": 238,
+      "OPEN_LONG": 1,
+      "CLOSE_LONG": 0,
+      "OPEN_SHORT": 0,
+      "CLOSE_SHORT": 0
+    },
+    "masked_action_counts": {
+      "HOLD": 238,
+      "OPEN_LONG": 1,
+      "CLOSE_LONG": 0,
+      "OPEN_SHORT": 0,
+      "CLOSE_SHORT": 0
+    },
+    "raw_invalid_count": 0,
+    "raw_invalid_pct": 0.0,
+    "hold_freq": 0.99581589958159,
+    "raw_hold_freq": 0.99581589958159,
+    "return_pct": 2.035831480122563,
+    "max_drawdown_pct": 1.4809984979402642,
+    "trade_count": 0,
+    "final_equity": 10000.0
+  },
+  {
+    "run_id": "scale_100_seed_43",
+    "reward_scale": 100.0,
+    "seed": 43,
+    "invalid_action_penalty": 0.001,
+    "q_mean": -0.001457134684914076,
+    "q_std": 0.042656335963048596,
+    "q_margin_mean": 0.05849779353995328,
+    "raw_action_counts": {
+      "HOLD": 238,
+      "OPEN_LONG": 0,
+      "CLOSE_LONG": 0,
+      "OPEN_SHORT": 0,
+      "CLOSE_SHORT": 1
+    },
+    "masked_action_counts": {
+      "HOLD": 239,
+      "OPEN_LONG": 0,
+      "CLOSE_LONG": 0,
+      "OPEN_SHORT": 0,
+      "CLOSE_SHORT": 0
+    },
+    "raw_invalid_count": 1,
+    "raw_invalid_pct": 0.41841004184100417,
+    "hold_freq": 1.0,
+    "raw_hold_freq": 0.99581589958159,
+    "return_pct": 0.0,
+    "max_drawdown_pct": 0.0,
+    "trade_count": 0,
+    "final_equity": 10000.0
+  },
+  {
+    "run_id": "scale_100_seed_44",
+    "reward_scale": 100.0,
+    "seed": 44,
+    "invalid_action_penalty": 0.001,
+    "q_mean": 0.04879346239033728,
+    "q_std": 0.03773463194737306,
+    "q_margin_mean": 0.0313582823116909,
+    "raw_action_counts": {
+      "HOLD": 239,
+      "OPEN_LONG": 0,
+      "CLOSE_LONG": 0,
+      "OPEN_SHORT": 0,
+      "CLOSE_SHORT": 0
+    },
+    "masked_action_counts": {
+      "HOLD": 239,
+      "OPEN_LONG": 0,
+      "CLOSE_LONG": 0,
+      "OPEN_SHORT": 0,
+      "CLOSE_SHORT": 0
+    },
+    "raw_invalid_count": 0,
+    "raw_invalid_pct": 0.0,
+    "hold_freq": 1.0,
+    "raw_hold_freq": 1.0,
+    "return_pct": 0.0,
+    "max_drawdown_pct": 0.0,
+    "trade_count": 0,
+    "final_equity": 10000.0
+  },
+  {
+    "run_id": "scale_1000_seed_42",
+    "reward_scale": 1000.0,
+    "seed": 42,
+    "invalid_action_penalty": 0.001,
+    "q_mean": -0.5774655124476514,
+    "q_std": 0.38340001158315595,
+    "q_margin_mean": 0.5835181413117063,
+    "raw_action_counts": {
+      "HOLD": 239,
+      "OPEN_LONG": 0,
+      "CLOSE_LONG": 0,
+      "OPEN_SHORT": 0,
+      "CLOSE_SHORT": 0
+    },
+    "masked_action_counts": {
+      "HOLD": 239,
+      "OPEN_LONG": 0,
+      "CLOSE_LONG": 0,
+      "OPEN_SHORT": 0,
+      "CLOSE_SHORT": 0
+    },
+    "raw_invalid_count": 0,
+    "raw_invalid_pct": 0.0,
+    "hold_freq": 1.0,
+    "raw_hold_freq": 1.0,
+    "return_pct": 0.0,
+    "max_drawdown_pct": 0.0,
+    "trade_count": 0,
+    "final_equity": 10000.0
+  },
+  {
+    "run_id": "scale_1000_seed_43",
+    "reward_scale": 1000.0,
+    "seed": 43,
+    "invalid_action_penalty": 0.001,
+    "q_mean": -0.6392695708504281,
+    "q_std": 0.36638495368152807,
+    "q_margin_mean": 0.7019156311097006,
+    "raw_action_counts": {
+      "HOLD": 239,
+      "OPEN_LONG": 0,
+      "CLOSE_LONG": 0,
+      "OPEN_SHORT": 0,
+      "CLOSE_SHORT": 0
+    },
+    "masked_action_counts": {
+      "HOLD": 239,
+      "OPEN_LONG": 0,
+      "CLOSE_LONG": 0,
+      "OPEN_SHORT": 0,
+      "CLOSE_SHORT": 0
+    },
+    "raw_invalid_count": 0,
+    "raw_invalid_pct": 0.0,
+    "hold_freq": 1.0,
+    "raw_hold_freq": 1.0,
+    "return_pct": 0.0,
+    "max_drawdown_pct": 0.0,
+    "trade_count": 0,
+    "final_equity": 10000.0
+  },
+  {
+    "run_id": "scale_1000_seed_44",
+    "reward_scale": 1000.0,
+    "seed": 44,
+    "invalid_action_penalty": 0.001,
+    "q_mean": -0.3619005038149686,
+    "q_std": 0.42706377418872116,
+    "q_margin_mean": 0.5651602470725151,
+    "raw_action_counts": {
+      "HOLD": 237,
+      "OPEN_LONG": 2,
+      "CLOSE_LONG": 0,
+      "OPEN_SHORT": 0,
+      "CLOSE_SHORT": 0
+    },
+    "masked_action_counts": {
+      "HOLD": 238,
+      "OPEN_LONG": 1,
+      "CLOSE_LONG": 0,
+      "OPEN_SHORT": 0,
+      "CLOSE_SHORT": 0
+    },
+    "raw_invalid_count": 1,
+    "raw_invalid_pct": 0.41841004184100417,
+    "hold_freq": 0.99581589958159,
+    "raw_hold_freq": 0.9916317991631799,
+    "return_pct": 1.5708755143328812,
+    "max_drawdown_pct": 1.4745841821426149,
+    "trade_count": 0,
+    "final_equity": 10000.0
+  },
+  {
+    "run_id": "scale_100_unpenalized_seed_42",
+    "reward_scale": 100.0,
+    "seed": 42,
+    "invalid_action_penalty": 0.0,
+    "q_mean": 0.0256415943283915,
+    "q_std": 0.03279603227615691,
+    "q_margin_mean": 0.014136668411570612,
+    "raw_action_counts": {
+      "HOLD": 110,
+      "OPEN_LONG": 119,
+      "CLOSE_LONG": 8,
+      "OPEN_SHORT": 2,
+      "CLOSE_SHORT": 0
+    },
+    "masked_action_counts": {
+      "HOLD": 232,
+      "OPEN_LONG": 2,
+      "CLOSE_LONG": 1,
+      "OPEN_SHORT": 2,
+      "CLOSE_SHORT": 2
+    },
+    "raw_invalid_count": 125,
+    "raw_invalid_pct": 52.30125523012552,
+    "hold_freq": 0.9707112970711297,
+    "raw_hold_freq": 0.4602510460251046,
+    "return_pct": 0.3352609640494775,
+    "max_drawdown_pct": 2.2945834591524745,
+    "trade_count": 0,
+    "final_equity": 10000.0
+  }
+]

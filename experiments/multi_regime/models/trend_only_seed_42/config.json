@@ -1,0 +1,40 @@
+{
+  "dqn": {
+    "policy": "MlpPolicy",
+    "net_arch": [
+      128,
+      128
+    ],
+    "buffer_size": 50000,
+    "batch_size": 64,
+    "learning_rate": 0.0003,
+    "gamma": 0.99,
+    "train_freq": 4,
+    "target_update_interval": 1000,
+    "exploration_initial_eps": 1.0,
+    "exploration_final_eps": 0.05,
+    "exploration_fraction": 0.25,
+    "learning_starts": 1000,
+    "total_timesteps": 10000,
+    "seed": 42,
+    "device": "cpu",
+    "checkpoint_freq": 10000,
+    "verbose": 0,
+    "invalid_action_penalty": 0.001
+  },
+  "data": {
+    "symbol": "BTCUSDT",
+    "interval": "15m",
+    "total_limit": 5000,
+    "train_fraction": 0.8,
+    "warmup_candles": 50,
+    "min_train_candles": 100,
+    "min_eval_candles": 50,
+    "episode_window": null,
+    "news_max_age_hours": 24.0,
+    "news_dropout_probability": 0.1,
+    "news_asset": null
+  },
+  "output_dir": "experiments\\multi_regime\\models",
+  "run_name": "trend_only_seed_42"
+}
